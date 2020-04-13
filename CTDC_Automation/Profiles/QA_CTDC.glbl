@@ -6,12 +6,12 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description>This variable holds the location of the input excel file which has the locators to be read from</description>
-      <initValue>'C:\\\\Data\\\\CTDC_Test1_Trials.xlsx'</initValue>
+      <initValue>''</initValue>
       <name>G_InputExcelFileName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc</description>
-      <initValue>'C:\\\\Users\\lollal\\Desktop\\\\Local_copy\\\\DataCommons_Automation\\\\CTDC_Automation\\\\chromedriver.exe'</initValue>
+      <initValue>''</initValue>
       <name>G_BrowserDriverPath</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

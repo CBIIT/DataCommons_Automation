@@ -27,6 +27,14 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.ArrayList;
 
+import java.nio.Buffer;
+import java.nio.ByteBuffer;
+import java.nio.file.FileSystem;
+import java.nio.file.LinkOption;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+
 import org.apache.poi.ss.usermodel.Cell
 import org.apache.poi.ss.usermodel.Row
 import org.apache.poi.ss.usermodel.Workbook
@@ -77,12 +85,16 @@ public class RunTestcase {
 	@Keyword
 	public static WebDriver driver = new ChromeDriver()
 	public  void Run() {
-
-		String filename = (GlobalVariable.G_InputExcelFileName)
+		
+		
+		
+		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData.xlsx");
+		System.out.println("This is the full filepath after converting to string :"+filepath.toString());
 		// Create an ArrayList to store the data read from excel sheet.
 		List<List<XSSFCell>> sheetData = new ArrayList<>();
-		FileInputStream fis = new FileInputStream(filename)
-		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		FileInputStream fis = new FileInputStream(filepath.toString());
+		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
+
 		// Get the  sheets on the workbook.
 		int numberOfSheets = workbook.getNumberOfSheets();
 		//for (int s = 0 ; s< numberOfSheets; s++){
@@ -190,8 +202,12 @@ public class RunTestcase {
 
 							case ("action_click"):
 
-								System.setProperty('webdriver.chrome.driver',  GlobalVariable.G_BrowserDriverPath )
-							//	'C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\chromedriver.exe')
+							Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
+							System.out.println("This is the full filepath of browser driver after converting to string :"+driverPath.toString());
+							System.setProperty('webdriver.chrome.driver', driverPath.toString())
+							
+							
+							//System.setProperty('webdriver.chrome.driver',  GlobalVariable.G_BrowserDriverPath )
 								System.out.println ("//******************IN ACTION CLICKKKKKKK********************************* ")
 
 								System.out.println ( " locator from excel  :"  + GlobalVariable.G_locatorvalue )

@@ -51,7 +51,7 @@ public class readUIResultsTable {
 	@Keyword
 	public List<String> G_readUIResultsTable() throws IOException {
 		List<String> webData = new ArrayList<String>();
-		
+
 		Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
 		System.out.println("This is the full filepath of browser driver after converting to string :"+driverPath.toString());
 		System.setProperty('webdriver.chrome.driver', driverPath.toString())

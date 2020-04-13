@@ -38,6 +38,13 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.ArrayList;
 
+import java.nio.Buffer;
+import java.nio.ByteBuffer;
+import java.nio.file.FileSystem;
+import java.nio.file.LinkOption;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 import org.apache.poi.ss.usermodel.Cell
 import org.apache.poi.ss.usermodel.Row
 import org.apache.poi.ss.usermodel.Workbook
@@ -66,15 +73,16 @@ public class ReadExcel {
 
 		System.out.println("00000000")
 
-		// path information.
-		String filename = ("C:\\Data\\readInput.xlsx")
+
+		// filepath information
+
+		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData.xlsx");
+		System.out.println("This is the full filepath after converting to string :"+filepath.toString());
+
 		// Create an ArrayList to store the data read from excel sheet.
 		List<List<XSSFCell>> sheetData = new ArrayList<>();
-
-		//try (FileInputStream fis = new FileInputStream(filename)) {
-		// Create an excel workbook from the file system.
-		FileInputStream fis = new FileInputStream(filename)
-		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		FileInputStream fis = new FileInputStream(filepath.toString());
+		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
 
 
 		System.out.println("333333333")
@@ -161,9 +169,15 @@ public class ReadExcel {
 
 	public  void RunTestcase(String name) {
 
-		System.out.println ( " My first variable GlobalVariable.G_InputExcelFileName "  + GlobalVariable.G_InputExcelFileName)
-		FileInputStream fis = new FileInputStream(GlobalVariable.G_InputExcelFileName);  //Data Files/readWriteExcel // ("C:\\Users\\radhakrishnang2\\Desktop\\Katalon_POC\\readInput.xlsx")
-		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+
+
+
+		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData.xlsx");
+		FileInputStream fis = new FileInputStream(filepath.toString());
+
+		//		System.out.println ( " My first variable GlobalVariable.G_InputExcelFileName "  + GlobalVariable.G_InputExcelFileName)
+		//		FileInputStream fis = new FileInputStream(GlobalVariable.G_InputExcelFileName);
+		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
 
 		ArrayList<String> xlContents = new ArrayList<String>();
 
@@ -273,16 +287,24 @@ public class ReadExcel {
 
 	public static  void initialLoad() {
 
-		System.setProperty('webdriver.chrome.driver',  GlobalVariable.G_BrowserDriverPath )
+		Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
+		System.out.println("This is the full filepath of browser driver after converting to string :"+driverPath.toString());
+		System.setProperty('webdriver.chrome.driver', driverPath.toString())
+		//System.setProperty("webdriver.chrome.driver", GlobalVariable.G_BrowserDriverPath);  //path of browser driver is in global variable under profiles
 		//GlobalVariable.G_Driver = new ChromeDriver()
+		WebDriver driver = new ChromeDriver()
+
 
 		System.out.println ( "*********************************INITIAL LOAD working *****************************")
 
-		String filename = (GlobalVariable.G_InputExcelFileName)
+		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData.xlsx");
+		System.out.println("This is the full filepath after converting to string :"+filepath.toString());
+
 		// Create an ArrayList to store the data read from excel sheet.
 		List<List<XSSFCell>> sheetData = new ArrayList<>();
-		FileInputStream fis = new FileInputStream(filename)
-		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		FileInputStream fis = new FileInputStream(filepath.toString());
+		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
+
 		// Get the  sheets on the workbook.
 		int numberOfSheets = workbook.getNumberOfSheets();
 		//for (int s = 0 ; s< numberOfSheets; s++){
