@@ -67,10 +67,10 @@ String casesLink = elemLoc.get(15)
 String trialArm = elemLoc.get(25)
 
 String trialArmOption = elemLoc.get(35)
-
-String gender = elemLoc.get(45)
-
-String genderOption = elemLoc.get(55)
+//
+//String gender = elemLoc.get(45)
+//
+//String genderOption = elemLoc.get(55)
 
 //String clearAllButton = elemLoc.get(71)
 System.out.println('Before clicking on the Cases button using locator')

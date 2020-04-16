@@ -70,6 +70,7 @@ import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
+import org.openqa.selenium.firefox.FirefoxDriver as FirefoxDriver
 import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import java.util.*
@@ -83,11 +84,9 @@ import ctdc.utilities.ReadExcel
 public class RunTestcase {
 
 	@Keyword
-	public static WebDriver driver = new ChromeDriver()
+	public static WebDriver driver = new ChromeDriver() //to be changed
 	public  void Run() {
-		
-		
-		
+
 		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData.xlsx");
 		System.out.println("This is the full filepath after converting to string :"+filepath.toString());
 		// Create an ArrayList to store the data read from excel sheet.
@@ -125,6 +124,7 @@ public class RunTestcase {
 		//e.printStackTrace();
 		//	}
 		//System.out.println(   " Before Initial " + workbook.getSheetName(0) )
+
 		excelparsing(sheetData,driver);
 		//	}
 		//System.out.println(   " Before Initial " + workbook.getSheetName(s) )
@@ -139,6 +139,10 @@ public class RunTestcase {
 		countrow = sheetData.size();
 		System.out.println ( " sheetdata size countrow " + countrow )
 		System.out.println ( "sheet  data size :" + sheetData.get(0).size())
+		//
+		//		Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
+		//		System.out.println("This is the full filepath of browser driver after converting to string :"+driverPath.toString());
+		//		System.setProperty('webdriver.chrome.driver', driverPath.toString())
 
 
 		for (int ii = 1; ii < countrow; ii++){
@@ -155,6 +159,33 @@ public class RunTestcase {
 				System.out.println ( "VALES :" + sheetData.get(ii).get(jj).getStringCellValue())
 				switch(sheetData.get(0).get(jj).getStringCellValue().trim() )
 				{
+					case("Browser"):
+						System.out.println ("Inside Browser Switch Case")
+						browserDriver(sheetData.get(ii).get(jj).getStringCellValue().trim())  //calling the function
+					//System.out.println ( "The value to be uses in the function call  : " + sheetData.get(ii).get(jj).getStringCellValue().trim() )
+					//						switch(sheetData.get(ii).get(jj).getStringCellValue().trim() )
+					//						{
+					//							case("Chrome"):
+					//								System.out.println ("Setting browser driver as Chromedriver")
+					//								Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
+					//								System.out.println("This is the full filepath of chrome driver after converting to string :"+driverPath.toString());
+					//								System.setProperty('webdriver.chrome.driver', driverPath.toString())
+					//								WebDriver driver = new ChromeDriver()  //resolve this issue
+					//								break;
+					//
+					//							case("Firefox"):
+					//								System.out.println ("Setting browser driver as Gecko driver (Firefox)")
+					//								Path driverPath = Paths.get(System.getProperty("user.dir"), "geckodriver.exe");
+					//								System.out.println("This is the full filepath of geckodriver (for firefox) after converting to string :"+driverPath.toString());
+					//								System.setProperty('webdriver.gecko.driver', driverPath.toString())
+					//								WebDriver driver = new FirefoxDriver()  //resolve this issue
+					//								break;
+					//
+					//							default:
+					//								System.out.println ("Nothing in Browser column")
+					//								break;
+					//						}
+					//
 
 					case("propertyName"):
 						GlobalVariable.G_propertyName = sheetData.get(ii).get(jj).getStringCellValue()
@@ -190,7 +221,6 @@ public class RunTestcase {
 						switch(sheetData.get(ii).get(jj).getStringCellValue().trim() )
 						{
 							case("InitialLoad"):
-
 								System.out.println ("  in the FUNCTION hjdhgdfghdghdfjdfgdWORK NOW dumbo ")
 							//CustomKeywords.'ctdc.utilities.ReadExcel.initialLoad'()
 								ReadExcel.initialLoad()
@@ -202,11 +232,8 @@ public class RunTestcase {
 
 							case ("action_click"):
 
-							Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
-							System.out.println("This is the full filepath of browser driver after converting to string :"+driverPath.toString());
-							System.setProperty('webdriver.chrome.driver', driverPath.toString())
-							
-							
+
+
 							//System.setProperty('webdriver.chrome.driver',  GlobalVariable.G_BrowserDriverPath )
 								System.out.println ("//******************IN ACTION CLICKKKKKKK********************************* ")
 
@@ -329,6 +356,32 @@ public class RunTestcase {
 		}
 	}
 
+	public static browserDriver(String browserName) {
+		switch(browserName)
+		{
+			case("Chrome"):
+				System.out.println ("Setting browser driver as Chromedriver")
+				Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
+				System.out.println("This is the full filepath of chrome driver after converting to string :"+driverPath.toString());
+				System.setProperty('webdriver.chrome.driver', driverPath.toString())
+				WebDriver driver = new ChromeDriver()  //resolve this issue
+				break;
 
+			case("Firefox"):
+				System.out.println ("Setting browser driver as Gecko driver (Firefox)")
+				Path driverPath = Paths.get(System.getProperty("user.dir"), "geckodriver.exe");
+				System.out.println("This is the full filepath of geckodriver (for firefox) after converting to string :"+driverPath.toString());
+				System.setProperty('webdriver.gecko.driver', driverPath.toString())
+				WebDriver driver = new FirefoxDriver()  //resolve this issue
+				break;
+
+			default:
+				System.out.println ("Nothing in Browser column")
+				break;
+		}
+
+
+
+	}
 
 }

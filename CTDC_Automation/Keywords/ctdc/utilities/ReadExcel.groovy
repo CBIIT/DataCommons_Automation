@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
+import org.openqa.selenium.firefox.FirefoxDriver as FirefoxDriver
 import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import java.util.*
@@ -133,9 +134,6 @@ public class ReadExcel {
 
 
 		// ---------------------------------
-
-
-
 		//"MATCH (n:case) RETURN n LIMIT 25"
 
 		//output= 'C:\laxmi\
@@ -146,17 +144,10 @@ public class ReadExcel {
 
 		String userName="neo4j";
 		String pwd="icdcDBneo4j0";
-		String output="C:/laxmi/Second_try.xlsx" ;
+		String output="C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\TestData\\DatafromNeo4j.xlsx" ;
 		//executor.run(neo4jServer,userName,pwd, query,output);
 
-
-
-
-
 		//----------------
-
-
-
 
 		CypherExecutor Test1 = new CypherExecutor()
 
