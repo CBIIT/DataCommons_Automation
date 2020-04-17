@@ -1,4 +1,3 @@
-
 package ctdc.utilities
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -24,12 +23,9 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-
 import com.kms.katalon.core.annotation.Keyword
 
-
-public class CypherExecutor {
-
+public   class ConnectDB {
 
 	private List<String>  messages = new ArrayList<String>();
 	public void run(String uri,String user,String password,String cypher,String output) {
@@ -115,7 +111,7 @@ public class CypherExecutor {
 			// write record into excel
 			int rowIndex = 0;
 			for(String str : data) {
-				System.out.println("Data STR:  "+str);
+				//System.out.println("Data STR:  "+str);
 				rowIndex++;
 				// Create row
 				Row row = sheet.createRow(rowIndex);
@@ -166,7 +162,7 @@ public class CypherExecutor {
 
 	@Keyword
 	public static void main () {  //String[] args
-		CypherExecutor executor = new CypherExecutor();
+		ConnectDB executor = new ConnectDB();
 		//read these info from the input excel place in the Test Data folder.
 		//add a use trial commons query for CTDC....
 		String query = "MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a  OPTIONAL MATCH (c)<-[*]-(f:file)  Return c.case_id  As case_id,t.clinical_trial_designation as clinical_trial_code,a.arm_id As arm_id, a.arm_drug As arm_drug, a.pubmed_id As pubmed_id, c.disease As disease, c.gender As gender, c.race As race, c.ethnicity As ethnicity, t.clinical_trial_id As clinical_trial_id, a.arm_id+'_'+ a.arm_drug As trial_arm, COLLECT(DISTINCT(f.file_type)) AS file_types, COLLECT(DISTINCT(f.file_format)) AS file_formats, COLLECT(DISTINCT(f)) AS files";
@@ -177,6 +173,7 @@ public class CypherExecutor {
 		executor.run(neo4jServer,userName,pwd, query,output);
 	}
 }
+
 
 
 
