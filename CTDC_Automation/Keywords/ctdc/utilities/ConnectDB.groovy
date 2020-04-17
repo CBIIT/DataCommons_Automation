@@ -24,7 +24,9 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.kms.katalon.core.annotation.Keyword
+
 public   class ConnectDB {
+
 	private List<String>  messages = new ArrayList<String>();
 	public void run(String uri,String user,String password,String cypher,String output) {
 		List<String>  excelData = new ArrayList<String>();
@@ -157,6 +159,7 @@ public   class ConnectDB {
 			e.printStackTrace();
 		}
 	}
+
 	@Keyword
 	public static void main () {  //String[] args
 		ConnectDB executor = new ConnectDB();
