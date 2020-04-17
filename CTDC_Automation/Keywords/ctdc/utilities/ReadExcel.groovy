@@ -67,14 +67,9 @@ public class ReadExcel {
 
 	public static void Test() {
 
-
-
-
 		// An excel file name. You can create a file name with a fullSystem.out.println("sjhdajdakjsd")
 
 		System.out.println("00000000")
-
-
 		// filepath information
 
 		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData.xlsx");
@@ -264,15 +259,6 @@ public class ReadExcel {
 		 System.out.println( "This is the string coming in: " + GlobalVariable.G_Browser );
 		 //System.Out.println ("the excel name : " + ExcelName ) */
 	}
-
-	/*	@Keyword
-	 public  void glo() {
-	 //System.out.println("name hjjjj")
-	 //'GlobalVariable.G_Browser =name
-	 System.out.println( "This is the string coming in: from glo " + GlobalVariable.G_Browser );
-	 //System.Out.println ("the excel name : " + ExcelName )
-	 } */
-
 
 	@Keyword
 

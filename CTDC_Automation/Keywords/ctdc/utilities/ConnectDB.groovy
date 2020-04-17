@@ -1,5 +1,4 @@
 
-
 package ctdc.utilities
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -26,9 +25,12 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import com.kms.katalon.core.annotation.Keyword
 
 
 public class CypherExecutor {
+
+
 	private List<String>  messages = new ArrayList<String>();
 	public void run(String uri,String user,String password,String cypher,String output) {
 		List<String>  excelData = new ArrayList<String>();
@@ -161,7 +163,9 @@ public class CypherExecutor {
 			e.printStackTrace();
 		}
 	}
-	public static void main (String[] args) {
+
+	@Keyword
+	public static void main () {  //String[] args
 		CypherExecutor executor = new CypherExecutor();
 		//read these info from the input excel place in the Test Data folder.
 		//add a use trial commons query for CTDC....
@@ -169,7 +173,7 @@ public class CypherExecutor {
 		String neo4jServer = "bolt://nabc/";
 		String userName="abc";
 		String pwd="abc";
-		String output="/Users/cheny39/Documents/tmp.csv";
+		String output="/Users/cheny39/Documents/tmp.csv";  // C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\CTDC_Automation\TestData\DatafromNeo4j.xlsx
 		executor.run(neo4jServer,userName,pwd, query,output);
 	}
 }
