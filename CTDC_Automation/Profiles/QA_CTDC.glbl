@@ -104,4 +104,24 @@
       <initValue>[]</initValue>
       <name>G_CaseData</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_cannine_caseTbl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_cannine_caseHdr</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_cannine_caseTblBdy</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_cannine_NxtBtn</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

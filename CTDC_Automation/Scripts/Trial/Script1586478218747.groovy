@@ -16,5 +16,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 //CustomKeywords.'ctdc.utilities.RunTestcase.Run'()
-CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
+CustomKeywords.'ctdc.utilities.RunTestcase.Run'('Input_TestData_laxmi.xlsx')
 

@@ -77,9 +77,9 @@ public class ReadExcel {
 		// An excel file name. You can create a file name with a fullSystem.out.println("sjhdajdakjsd")
 
 
-		// filepath information  Laxmi and gayatri learning GIT hum  - and its balh 
+		// filepath information  Laxmi and gayatri learning GIT hum  - and its balh
 
-		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData.xlsx");
+		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData_laxmi.xlsx");
 		System.out.println("This is the full filepath after converting to string :"+filepath.toString());
 
 		// Create an ArrayList to store the data read from excel sheet.
@@ -178,7 +178,7 @@ public class ReadExcel {
 
 
 
-		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData.xlsx");
+		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData_laxmi.xlsx");
 		FileInputStream fis = new FileInputStream(filepath.toString());
 
 		//		System.out.println ( " My first variable GlobalVariable.G_InputExcelFileName "  + GlobalVariable.G_InputExcelFileName)
@@ -211,7 +211,7 @@ public class ReadExcel {
 						case("Browser"):
 							System.out.println( "inside case")
 						//Do Test here
-							System.out.println (  "Browser in excel is : " +ce.get(1).stringCellValue )
+						//System.out.println (  "Browser in excel is : " +ce.get(1).stringCellValue )
 							break;
 						case("server"):
 							break;
@@ -284,18 +284,18 @@ public class ReadExcel {
 
 	public static  void initialLoad() {
 
-		Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
-		System.out.println("This is the full filepath of browser driver after converting to string :"+driverPath.toString());
-		System.setProperty('webdriver.chrome.driver', driverPath.toString())
+		//Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
+		//System.out.println("This is the full filepath of browser driver after converting to string :"+driverPath.toString());
+		//System.setProperty('webdriver.chrome.driver', driverPath.toString())
 		//System.setProperty("webdriver.chrome.driver", GlobalVariable.G_BrowserDriverPath);  //path of browser driver is in global variable under profiles
 		//GlobalVariable.G_Driver = new ChromeDriver()
-		WebDriver driver = new ChromeDriver()
+		//WebDriver driver = new ChromeDriver()
 
 
 		//System.out.println ( "*********************************INITIAL LOAD working *****************************")
 
 		//String filename = (GlobalVariable.G_InputExcelFileName)
-		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData.xlsx");
+		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData_laxmi.xlsx");
 		GlobalVariable.G_InputExcelFileName=filepath.toString()
 
 		String filename = (GlobalVariable.G_InputExcelFileName)
@@ -477,6 +477,52 @@ public class ReadExcel {
 		//System.out.println	GlobalVariable.G_Action
 		//System.out.println	GlobalVariable.
 		System.out.println ("******************END PRINGING**********************************")
+	}
+
+	@Keyword
+
+	public static getElementID(WebElement Tab1 , String caseid , WebDriver driver ){
+		WebElement Tab
+		Tab = driver.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div/div[4]/div[2]/div/div[2]/table"))
+
+		// = "//*[@id=\"root\"]/div[3]/div/div[4]/div[2]/div/div[2]/table"
+
+		System.out.println (" Getting ID  of " + caseid)
+		//Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
+		//System.out.println("This is the full filepath of browser driver after converting to string :"+driverPath.toString());
+		//''System.setProperty('webdriver.chrome.driver', driverPath.toString())
+		//WebDriver driver = new ChromeDriver()
+
+		//driver.get("https://caninecommons.cancer.gov/#/cases")
+		//driver.manage().window().maximize();
+		//WebElement Table = driver.findElement(By.id("table_cases"))
+		//WebElement Table = driver.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div/div[4]/div[2]/div/div[2]/table"))
+		//String CTDCid ="CTDC-43062"
+		//*[@id="MUIDataTableSelectCell-4"]   // go one level up from ctdc id and get this value  (or) use the same Id and use type = checkbox
+		//spy and add for select all
+		//*[@id="MUIDataTableBodyRow-4"]/td[3]/div/a    get attribute by id & trim the td tr etc and click on the checkbox
+
+		if (Tab.findElement(By.linkText(caseid))!=null){
+			System.out.println (" passed level 1")
+
+			String job = caseid;
+			//WebElement table = driver.findElement(By.xpath(".//tr[contains(@MUIDataTableBodyRow,'"+job+"')]"));
+			String  rows_table= Tab.findElement(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\" '" + caseid +"'" ))
+			//String dataRowIndex = table.getAttribute("data-testid");
+			System.out.println(rows_table);
+
+
+			//WebElement c = Tab.findElement(By.linkText(caseid));
+			//System.out.println (" passed level 2" + c.getAttribute("rowIndex"))
+			//WebElement parentCasebyID = Tab.findElement(c)  //parent::tr
+			//System.out.println (" passed level 3")
+			//String rownum = Tab.findElement(By.linkText(caseid)).getAttribute("rowIndex");
+
+			//System.out.println("Found element with given case id"  + parentCasebyID )
+			//System.out.println("Id of the given case id is:- "+ rownum);
+		}else{
+			System.out.println("Element with given case id not found in this page")
+		}
 	}
 
 

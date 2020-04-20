@@ -27,6 +27,13 @@ import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import com.kms.katalon.core.webui.driver.DriverFactory
 
+import java.nio.Buffer;
+import java.nio.ByteBuffer;
+import java.nio.file.FileSystem;
+import java.nio.file.LinkOption;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -41,10 +48,10 @@ import java.lang.Object
 0
 
 
-public class readUIResultsTable {
+public class readUIResultsTable_laxmi {
 
 	@Keyword
-	public List<String> G_readUIResultsTable() throws IOException {
+	public List<String> G_readUIResultsTable_laxmi() throws IOException {
 		List<String> webData = new ArrayList<String>();
 
 		Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
