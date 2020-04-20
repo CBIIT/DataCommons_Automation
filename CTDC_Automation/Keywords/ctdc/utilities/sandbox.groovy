@@ -27,6 +27,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import java.util.*
 import java.lang.String as String
 import groovy.transform.Field as Field
+import java.util.concurrent.TimeUnit;
 
 
 import internal.GlobalVariable
@@ -167,6 +168,71 @@ public class sandbox  {
 
 	}
 
+
+
+	@Keyword
+	public  class ReadWebData {
+		public List<String> readWebData() {
+			List<String> webData = new ArrayList<String>();
+			System.setProperty("webdriver.chrome.driver", ".\\Driver\\chromedriver.exe");
+			WebDriver driver = new ChromeDriver();
+			driver.navigate().to("https://caninecommons.cancer.gov/#/cases");
+			driver.manage().window().maximize(); // maximize window
+			driver.manage().deleteAllCookies(); // delete all the cookies
+			// dynamic wait
+			driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			String tbl;
+			tbl = "./html/body/div/div[3]/div[4]/div/div/div[3]/table/tbody/tr";
+			int row = driver.findElements(By.xpath(tbl)).size();
+			int col = driver.findElements(By.xpath("./html/body/div/div[3]/div[4]/div/div/div[3]/table/tbody/tr[1]/*"))
+					.size();
+			int i = 0;
+			int j = 0;
+			for (i = 1; i <= row; i++) {
+				String data = "";
+				for (j = 1; j < col + 2; j = j + 2) {
+					data = data + (driver.findElement(By.xpath(
+							"./html/body/div/div[3]/div[4]/div/div/div[3]/table/tbody/tr" + "[" + i + "]/*[" + j + "]"))
+							.getText() + "||");
+				}
+				webData.add(data);
+			}
+			for (int index = 0; index < webData.size(); index++) {
+				System.out.println("Web Data: " + webData.get(index));
+			}
+			return webData;
+		}
+	}
+	@Keyword
+	public static getElementID(WebElement Tab , String caseid){
+		//Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
+		//System.out.println("This is the full filepath of browser driver after converting to string :"+driverPath.toString());
+		//''System.setProperty('webdriver.chrome.driver', driverPath.toString())
+		//WebDriver driver = new ChromeDriver()
+
+		//driver.get("https://caninecommons.cancer.gov/#/cases")
+		//driver.manage().window().maximize();
+		//WebElement Table = driver.findElement(By.id("table_cases"))
+		//WebElement Table = driver.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div/div[4]/div[2]/div/div[2]/table"))
+		//String CTDCid ="CTDC-43062"
+		//*[@id="MUIDataTableSelectCell-4"]   // go one level up from ctdc id and get this value  (or) use the same Id and use type = checkbox
+		//spy and add for select all
+		//*[@id="MUIDataTableBodyRow-4"]/td[3]/div/a    get attribute by id & trim the td tr etc and click on the checkbox
+
+		if (Tab.findElement(By.linkText(caseid))!=null){
+			WebElement c = Tab.findElement(By.linkText(caseid));
+			WebElement parentCasebyID = Tab.findElement(c)  //parent::tr
+			String rownum = Tab.findElement(By.linkText(caseid)).getAttribute("rowIndex");
+
+			System.out.println("Found element with given case id"  + parentCasebyID )
+			System.out.println("Id of the given case id is:- "+ rownum);
+		}else{
+			System.out.println("Element with given case id not found in this page")
+		}
+	}
+
+
+
+
 }
-
-

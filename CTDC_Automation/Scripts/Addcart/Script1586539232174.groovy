@@ -18,37 +18,11 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://caninecommons-qa.cancer.gov/#/home')
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.openBrowser('')
-
 WebUI.navigateToUrl('https://caninecommons.cancer.gov/#/home')
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Page_ICDC/a_Cases'))
 
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Page_ICDC/input_Neutered Status_MUIDataTableSelectCell-79'))
 
 WebUI.closeBrowser()
-
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://caninecommons.cancer.gov/#/home')
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
 
