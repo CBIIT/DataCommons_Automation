@@ -145,7 +145,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import internal.GlobalVariable
 import ctdc.utilities.ReadExcel
 
-public class RunTestcase {
+
+
+public class RunTestcase implements Comparator<List<XSSFCell>>
+{
+
+	public int compare( List<String> l1, List<String> l2 ){
+		return l1.get(0).getStringValue() .compareTo( l2.get(0).getStringValue() )
+	}
+
+	// implements Comparator<List<XSSFCell>>{
+	//	public int compare( List<XSSFCell> l1, List<XSSFCell> l2 ){
+	//	return l1.get(0).getStringCellValue() .compareTo( l2.get(0).getStringCellValue() )
+	//}
 
 	public static WebDriver driver = new ChromeDriver()
 
@@ -155,6 +167,8 @@ public class RunTestcase {
 		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", InputExcelname); // give the Input Excel Name in manual mode in TC
 		System.out.println("This is the full filepath after converting to string :"+filepath.toString());
 
+
+		GlobalVariable.G_InputExcelFileName=filepath.toString()
 		List<List<XSSFCell>> sheetData = new ArrayList<>();
 		FileInputStream fis = new FileInputStream(filepath.toString());
 		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
@@ -222,7 +236,7 @@ public class RunTestcase {
 						break;
 					case("action"):
 						GlobalVariable.G_Action = sheetData.get(ii).get(jj).getStringCellValue()
-				        break;
+						break;
 					case("Query"):
 						GlobalVariable.G_Query = sheetData.get(ii).get(jj).getStringCellValue()
 						break;
@@ -235,7 +249,7 @@ public class RunTestcase {
 						}
 						break;
 					case("Function"):
-						System.out.println ( "  the value tobe uses in the function call  : " + sheetData.get(ii).get(jj).getStringCellValue().trim() )
+						System.out.println ( "  the value to be uses in the function call  : " + sheetData.get(ii).get(jj).getStringCellValue().trim() )
 						switch(sheetData.get(ii).get(jj).getStringCellValue().trim() )
 						{
 							case("InitialLoad"):
@@ -269,11 +283,17 @@ public class RunTestcase {
 								String one_all = sheetData.get(ii).get(2).getStringCellValue().trim()
 								String Casenum= sheetData.get(ii).get(3).getStringCellValue().trim()
 								Select_case_checkbox(driver,Casenum,one_all )
+								break;
 							case("webdata"):
 								List<String> WData = new ArrayList<String>();
 							//GlobalVariable.G_CaseData=
 								WData=ReadCasesTable(driver)
 							//GlobalVariable.G_Run = sheetData.get(ii).get(jj).getStringCellValue()
+								break;
+
+							case("compare"):
+
+								compareLists();
 								break;
 							case("StoreGlobal"):
 								GlobalVariable.(sheetData.get(ii).get(3).getStringCellValue())=sheetData.get(ii).get(6).getStringCellValue()
@@ -302,7 +322,7 @@ public class RunTestcase {
 		}
 	}
 
-//----------------web data --------------
+	//----------------web data --------------
 
 	public static Select_case_checkbox( WebDriver driver,String caseID,String count){
 
@@ -372,7 +392,7 @@ public class RunTestcase {
 				for (int j = 1; j < columns_count+10; j = j + 2) {
 
 					data = data + (driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]"))
-							.getText() + "||")
+							.getText() )
 				}
 
 
@@ -406,6 +426,104 @@ public class RunTestcase {
 		}
 	}
 
+	//Gayatri's - compare code
+
+	//	public  static class CompareLib implements Comparator<List<XSSFCell>>{
+	//		public int compare( List<XSSFCell> l1, List<XSSFCell> l2 ){
+	//			return l1.get(0).getStringCellValue() .compareTo( l2.get(0).getStringCellValue() )
+	//		}
+	//setup
+	//teardown
+	//dbconnection
+
+
+	//check if null**********************************************************
+
+	// verify element present
+
+
+
+	//compare lists***********************************************************
+	public static void compareTwoLists( List<List<String>> l1, List<List<String>> l2 ){
+		System.out.println ("Comparing two Lists");
+
+		for( int l2row = 0; l2row < l2.size(); l2row++ ){
+			List<String> l2rowList = l2.get(l2row)
+			//System.out.println(" L2Row contents: " + l2rowList )
+
+			for( int l1row = 0; l1row < l1.size(); l1row++ ){
+				List<String> l1rowList = l1.get(l1row)
+				//System.out.println(" L1Row contents: " + l1rowList )
+				if( l2rowList.get(0) == l1rowList.get(0) ) //takes CTDCID as the primary key for comparison
+				{
+					System.out.println(" L1Row contents Matched with: " + l1rowList + " and: " + l2rowList )
+					for(int col = 0; col < l2rowList.size(); col++ ){ //compares all the columns in the excels - for each row
+						if( l1rowList.get(col) == l2rowList.get(col)){
+							System.out.println("Content matches for col: " + col )
+						}
+						else{
+							System.out.println("Content does not match for col: " + col )
+							System.out.println( "L1Row Value: " + l1rowList.get(col) )
+							System.out.println( "L2Row Value: " + l2rowList.get(col) )
+						}
+					}
+
+				}else{
+					// add what the code should display if contents mismatch outside the main loop for CTDC ID
+				}
+			}
+
+		}
+	}
+
+	@Keyword
+	public static void compareLists() {
+		List<List<String>> UIData = new ArrayList<>()
+		List<List<String>> neo4jData = new ArrayList<>()
+		//			//read ui results table data and store in 2d array
+		//			Path UIfilepath = Paths.get(System.getProperty("user.dir"), "TestData", "readUIResultsData.xlsx");
+		//			String UIfilename = UIfilepath.toString()
+		//			System.out.println("This is the full uifilepath after converting to string :"+UIfilename);
+		//UIData = ReadExcel.Test(UIfilename)  //change the function name Test in parent class and here
+
+		UIData = GlobalVariable.G_CaseData
+
+		//System.out.println ("Before sorting: This is the contents of UIdata : "+ UIData);
+		System.out.println ("This is the row size of the UIdata : "+ UIData.size());
+
+		//Collections.sort( UIData , new RunTestcase() )  //class SortByFirstColumn() -- WILL REVISIT
+
+
+
+		//System.out.println ("After Sorting: This is the contents of UIdata : "+ UIData);
+
+
+		//read neo4j data here & store in 2d array
+		//			Path neo4jfilepath = Paths.get( GlobalVariable.G_ResultPath;
+		//			String neo4jfilename = neo4jfilepath.toString()
+
+
+		String neo4jfilename =  GlobalVariable.G_ResultPath.toString() ;
+		//String neo4jfilename = neo4jfilepath.toString()
+
+		System.out.println("This is the full neo4jfilepath after converting to string :"+neo4jfilename);
+
+		//readInputExcel rdExl = new readInputExcel() //only if the parent method is not declared static, creating object for readInputExcel class to access its 'Test' method to read xl
+		//neo4jData = ReadExcel.Test(neo4jfilename)
+		neo4jData = ReadExcel.ExcelToArray(neo4jfilename)
+		neo4jData = GlobalVariable.G_DBdata
+		//System.out.println ("Before Sorting: This is the contents of ne04jdata : "+neo4jData);
+		System.out.println ("This is the row size of the ne04jdata : "+neo4jData.size());
+		//Collections.sort( neo4jData , new RunTestcase() )
+		//System.out.println ("After Sorting: This is the contents of Neo4JData : "+ neo4jData );
+
+		compareTwoLists( UIData, GlobalVariable.G_DBdata )
+
+	}
+
+
+
+	//} //class ends here
 
 	//	@Keyword
 	public static browserDriver(String browserName) {
@@ -432,5 +550,5 @@ public class RunTestcase {
 				break;
 		}
 	}
-	
+
 }
