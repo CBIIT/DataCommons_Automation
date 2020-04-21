@@ -141,13 +141,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import static org.junit.Assert.*;
-
-import internal.GlobalVariable
-
-
-
-
+//import static org.junit.Assert.*;
 import internal.GlobalVariable
 import ctdc.utilities.ReadExcel
 
@@ -158,15 +152,13 @@ public class RunTestcase {
 	@Keyword
 	public  void Run( String InputExcelname) {
 
-		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", InputExcelname);
+		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", InputExcelname); // give the Input Excel Name in manual mode in TC
 		System.out.println("This is the full filepath after converting to string :"+filepath.toString());
-		// Create an ArrayList to store the data read from excel sheet.
+
 		List<List<XSSFCell>> sheetData = new ArrayList<>();
 		FileInputStream fis = new FileInputStream(filepath.toString());
 		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
-
-		// Get the  sheets on the workbook.
-		int numberOfSheets = workbook.getNumberOfSheets();
+		int numberOfSheets = workbook.getNumberOfSheets();  	// Get the  sheets on the workbook
 		//for (int s = 0 ; s< numberOfSheets; s++){
 		int countrow = 0
 		int countcol= 0
@@ -175,14 +167,14 @@ public class RunTestcase {
 		//System.out.println( numberOfSheets)
 		XSSFSheet sheet = workbook.getSheetAt(1);  // Very important that we read the sheet 1 as its test case sheet
 		countrow = sheet.lastRowNum- sheet.firstRowNum;
-		//System.out.println ( "roww count is  : " + countrow);
+		System.out.println ( "Row count is  : " + countrow);
 		countcol = sheet.getRow(0).getLastCellNum();
-		//System.out.println("Col count : " + countcol);
+		System.out.println("Col count is : " + countcol);
+
 		Iterator rows = sheet.rowIterator();
 		while (rows.hasNext()) {
 			XSSFRow row = (XSSFRow) rows.next();
 			Iterator cells = row.cellIterator();
-
 			List<XSSFCell> data = new ArrayList<>();
 			while (cells.hasNext()) {
 				XSSFCell cell = (XSSFCell) cells.next();
@@ -190,25 +182,20 @@ public class RunTestcase {
 			}
 			sheetData.add(data);
 		}
-
 		excelparsing(sheetData,driver);
-
-
 	}
 
 
-	private static void excelparsing(List<List<XSSFCell>> sheetData, WebDriver driver) {
-		// Iterates the data and print it out to the console.
-		int countrow = 0
+	private static void excelparsing(List<List<XSSFCell>> sheetData, WebDriver driver) {//this is initializing second sheet - test case
+		int countrow = 0   // Iterates the data and print it out to the console.
 		countrow = sheetData.size();
-		System.out.println ( " sheetdata size countrow " + countrow )
-		System.out.println ( "sheet  data size :" + sheetData.get(0).size())
+		System.out.println ( " sheetdata size countrow " + countrow )   //delete
+		System.out.println ( "sheet  data size :" + sheetData.get(0).size())  //delete
 
 		for (int ii = 1; ii < countrow; ii++){
 			List<XSSFCell> datarow = sheetData.get(ii);
 
 			for (int jj = 0; jj < datarow.size(); jj++){
-				//	System.out.println ("value of  ii :"  + ii + "  Value of jj  : " + jj )
 
 				XSSFCell cell = datarow.get(jj);
 
@@ -218,63 +205,40 @@ public class RunTestcase {
 				{
 					case("Browser"):
 					//				System.out.println ("Inside Browser Switch Case")
-
+					//browser switch case is a separate function. refer and correct this chunk
 
 					case("propertyName"):
 						GlobalVariable.G_propertyName = sheetData.get(ii).get(jj).getStringCellValue()
-					//					System.out.println ( " THE Property name  BEING saved :  "  +  GlobalVariable.G_propertyName )
-
-					//Do Test here
 						break;
 					case("propertyvalue"):
 						GlobalVariable.G_propertyvalue = sheetData.get(ii).get(jj).getStringCellValue()
 						System.out.println ( " THE propertyvalue BEING saved :  "  +  GlobalVariable.G_propertyvalue )
-
-					//Do Test here
 						break;
 					case("locateby"):
 						GlobalVariable.G_locateby = sheetData.get(ii).get(jj).getStringCellValue()
-					//Do Test here
 						break;
 					case("locatorvalue"):
 						GlobalVariable.G_locatorvalue = sheetData.get(ii).get(jj).getStringCellValue()
-					//Do Test here
 						break;
 					case("action"):
 						GlobalVariable.G_Action = sheetData.get(ii).get(jj).getStringCellValue()
-					//Do Test here
-						break;
+				        break;
 					case("Query"):
-
 						GlobalVariable.G_Query = sheetData.get(ii).get(jj).getStringCellValue()
-					//						System.out.println ( " THE QUERY BEING saved :  "  +  GlobalVariable.G_Query )
-
-
-
-
-					//Do Test here
 						break;
 					case("Page"):
 						GlobalVariable.G_Page = sheetData.get(ii).get(jj).getStringCellValue().trim()
 						if( GlobalVariable.G_Page=="na"){
-
 						}
-
 						else {
-
-
 							driver.get(GlobalVariable.G_Page)
 						}
-
 						break;
 					case("Function"):
-
-
 						System.out.println ( "  the value tobe uses in the function call  : " + sheetData.get(ii).get(jj).getStringCellValue().trim() )
 						switch(sheetData.get(ii).get(jj).getStringCellValue().trim() )
 						{
 							case("InitialLoad"):
-
 								ReadExcel.initialLoad()
 								ReadExcel.PrintG()
 								break;
@@ -282,95 +246,63 @@ public class RunTestcase {
 								System.out.println  (" In dataload")
 								ReadExcel.Neo4j()
 								break;
-
 							case ("action_click"):
 								driver.manage().window().maximize()
-
-
 							//Thread.sleep(3000)
 								driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 								driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
 							//WebUI.waitForPageLoad(5)
 								WebDriverWait wait = new WebDriverWait(driver, 30);
 								WebElement ElementFromExcel
 								ElementFromExcel = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.G_locatorvalue)))
-
 							//Thread.sleep(3000)
 							//driver.findElement(By.xpath( GlobalVariable.G_locatorvalue)).click()
 								ElementFromExcel.click()
-
-
 								Thread.sleep(3000)
-
-
 								System.out.println( " clicked on :" + GlobalVariable.G_locatorvalue )
-
 							//driver.manage().window().maximize()
 							//WebDriverWait wait = new WebDriverWait(driver, 30);
-
 							//driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 							//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
 								break;
-
-
 							case("Select_case_checkbox"):
-
-
-
 								String one_all = sheetData.get(ii).get(2).getStringCellValue().trim()
 								String Casenum= sheetData.get(ii).get(3).getStringCellValue().trim()
-
 								Select_case_checkbox(driver,Casenum,one_all )
-
 							case("webdata"):
 								List<String> WData = new ArrayList<String>();
-
 							//GlobalVariable.G_CaseData=
 								WData=ReadCasesTable(driver)
 							//GlobalVariable.G_Run = sheetData.get(ii).get(jj).getStringCellValue()
 								break;
 							case("StoreGlobal"):
-
 								GlobalVariable.(sheetData.get(ii).get(3).getStringCellValue())=sheetData.get(ii).get(6).getStringCellValue()
 							//System.out.println GlobalVariable.(sheetData.get(ii).get(3).getStringCellValue())
 							//System.out.println GlobalVariable.G_cannine_caseTbl
 							//System.out.println GlobalVariable.G_cannine_caseTblBdy
 								break;
 							case("verify"):
-
 								verify_text(driver,"American Staffordshire Terrier" , GlobalVariable.G_locatorvalue  )
 								break ;
-
 							default:
 								System.out.println ("nothing in function column :")
 								break;
 						}
 						break;
-
-
-					case("Run"):
+					case("Run"):   // create a code to use this Run Flag value to decide processing that rows data
 						GlobalVariable.G_Run = sheetData.get(ii).get(jj).getStringCellValue()
 						break;
 					case("Otherimportuser"):
 						break;
-
 					default :
 						System.out.println ( " here at the last ")
 						break;
 				}
-
-
 			}
 		}
 	}
 
-
-
-
-
-	//----------------web data --------------
+//----------------web data --------------
 
 	public static Select_case_checkbox( WebDriver driver,String caseID,String count){
 
@@ -460,20 +392,11 @@ public class RunTestcase {
 		GlobalVariable.G_CaseData= webData;
 	}
 
-	
-	
+
+	// fix this function to verify
 	public static verify_text( WebDriver driver ,String to_comp , String locator_id){
-
-
-
 		String actualString =driver.findElement(By.xpath(locator_id)).getText();
-
 		String expectedString = to_comp;
-
-		;
-
-
-
 		if (assertTrue(actualString.contains(expectedString)) ) {
 			System.out.println " passed the assertion ";
 		}
@@ -481,17 +404,10 @@ public class RunTestcase {
 			System.out.println( "failed asserted stringcompare ")
 
 		}
-
-
-
-
-
 	}
 
 
-
 	//	@Keyword
-
 	public static browserDriver(String browserName) {
 		switch(browserName)
 		{
@@ -515,9 +431,6 @@ public class RunTestcase {
 				System.out.println ("Nothing in Browser column")
 				break;
 		}
-
-
-
-
 	}
+	
 }

@@ -35,22 +35,22 @@
       <name>G_Action</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>This variable stores the Neo4J database's server url at runtime</description>
       <initValue>''</initValue>
       <name>G_server</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>This variable stores the Neo4J database's username at runtime</description>
       <initValue>''</initValue>
       <name>G_UserId</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>This variable stores the Neo4J database's password at runtime</description>
       <initValue>''</initValue>
       <name>G_Password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>This variable stores the path of the output file onto which the data is written from Ne04j</description>
       <initValue>''</initValue>
       <name>G_ResultPath</name>
    </GlobalVariableEntity>
@@ -70,7 +70,7 @@
       <name>G_propertyvalue</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria</description>
       <initValue>''</initValue>
       <name>G_Query</name>
    </GlobalVariableEntity>

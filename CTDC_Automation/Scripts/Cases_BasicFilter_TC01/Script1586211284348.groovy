@@ -47,7 +47,7 @@ import java.nio.file.Paths;
 import java.lang.String as String
 import groovy.transform.Field as Field
 
-ArrayList<String> elemLoc = CustomKeywords.'ctdc.utilities.readInputExcel.G_readInputExcel'('')
+ArrayList<String> elemLoc = CustomKeywords.'ctdc.utilities.extraFunctions.G_readInputExcel'('')
 
 
 Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
