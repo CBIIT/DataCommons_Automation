@@ -233,6 +233,12 @@ public class sandbox  {
 	}
 
 
-
+@Keyword
+public static checkLastpage()
+{
+	
+	
+	
+}	
 
 }
