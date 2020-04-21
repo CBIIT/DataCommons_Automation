@@ -69,7 +69,7 @@ import ctdc.utilities.ConnectDB
 
 public class ReadExcel {
 	//
-	public static WebDriver driver = new ChromeDriver()
+	//public static WebDriver driver = new ChromeDriver()
 
 
 	@Keyword
@@ -118,18 +118,18 @@ public class ReadExcel {
 	@Keyword
 	public static void Neo4j() {
 		System.out.println ( " Connection data for Neo4J is  :  " +  GlobalVariable.G_Query +   GlobalVariable.G_UserId +   GlobalVariable.G_Password +  GlobalVariable.G_ResultPath + GlobalVariable.G_server )
-		//		String query =GlobalVariable.G_Query
-		//		String userName= GlobalVariable.G_UserId
-		//		String pwd= GlobalVariable.G_Password
-		//		String output= GlobalVariable.G_ResultPath
-		//		String neo4jServer = GlobalVariable.G_server
+		String query =GlobalVariable.G_Query
+		String userName= GlobalVariable.G_UserId
+		String pwd= GlobalVariable.G_Password
+		String output= GlobalVariable.G_ResultPath
+		String neo4jServer = GlobalVariable.G_server
 
 		//String query ="MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a  OPTIONAL MATCH (c)<-[*]-(f:file)  Return c.case_id  As case_id,t.clinical_trial_designation as clinical_trial_code,a.arm_id As arm_id, a.arm_drug As arm_drug, a.pubmed_id As pubmed_id, c.disease As disease, c.gender As gender, c.race As race, c.ethnicity As ethnicity, t.clinical_trial_id As clinical_trial_id, a.arm_id+'_'+ a.arm_drug As trial_arm, COLLECT(DISTINCT(f.file_type)) AS file_types, COLLECT(DISTINCT(f.file_format)) AS file_formats, COLLECT(DISTINCT(f)) AS files"
-		String query ="MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a Return distinct c.case_id As `Case ID`,t.clinical_trial_designation as `Trial Code`,a.arm_id As Arm, a.arm_drug As `Arm Treatment`, c.disease As Diagnosis, c.gender As Gender, c.race As Race, c.ethnicity As Ethnicity"
-		String userName ="neo4j"
-		String pwd= "icdcDBneo4j0"
-		String output= "C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\TestData\\DatafromNeo4j.xlsx"
-		String neo4jServer = "bolt://ncidb-q325-c.nci.nih.gov"
+		//String query ="MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a Return distinct c.case_id As `Case ID`,t.clinical_trial_designation as `Trial Code`,a.arm_id As Arm, a.arm_drug As `Arm Treatment`, c.disease As Diagnosis, c.gender As Gender, c.race As Race, c.ethnicity As Ethnicity"
+		//String userName ="neo4j"
+		//String pwd= "icdcDBneo4j0"
+		//String output= "C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\TestData\\DatafromNeo4j.xlsx"
+		//String neo4jServer = "bolt://ncidb-q325-c.nci.nih.gov"
 		ConnectDB Test1 = new ConnectDB()
 		Test1.run(neo4jServer,userName,pwd, query,output)
 	}
@@ -224,14 +224,14 @@ public class ReadExcel {
 		//WebDriver driver = new ChromeDriver()
 
 
-		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData_G.xlsx");
-		GlobalVariable.G_InputExcelFileName=filepath.toString()
+		//Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData_G.xlsx");
+		//GlobalVariable.G_InputExcelFileName=filepath.toString()
 		//String filename = (GlobalVariable.G_InputExcelFileName)
-		System.out.println("This is the full filepath after converting to string (from Global) :"+GlobalVariable.G_InputExcelFileName);
+		//System.out.println("This is the full filepath after converting to string (from Global) :"+GlobalVariable.G_InputExcelFileName);
 
 
 		List<List<XSSFCell>> sheetData = new ArrayList<>();  // Create an ArrayList to store the data read from excel sheet
-		FileInputStream fis = new FileInputStream(filepath.toString());  //give GlobalVariable.G_InputExcelFileName
+		FileInputStream fis = new FileInputStream(GlobalVariable.G_InputExcelFileName);  //give GlobalVariable.G_InputExcelFileName
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		int numberOfSheets = workbook.getNumberOfSheets(); 	// Get the  sheets on the workbook.
 		System.out.println("Total number of sheets in the excel: "+numberOfSheets)
@@ -256,11 +256,11 @@ public class ReadExcel {
 			//workbook.close();
 		}
 		System.out.println(   " Before Initialing Global Variables " + workbook.getSheetName(0) )
-		Initialising(sheetData,driver);  // calling function to initialise global variables before performing DB connection
+		Initialising(sheetData);  // calling function to initialise global variables before performing DB connection
 	}
 
 
-	private static void Initialising(List<List<XSSFCell>> sheetData, WebDriver driver) {  //this is DB initializing
+	private static void Initialising(List<List<XSSFCell>> sheetData) {  //this is DB initializing
 		// Iterates the data and print it out to the console.
 		int countrow = 0
 		countrow = sheetData.size();
@@ -387,6 +387,41 @@ public class ReadExcel {
 			System.out.println("Element with given case id not found in this page")
 		}
 	}
+
+
+	@Keyword
+	public static  ExcelToArray( String filename) {
+		// public static void main(String[] args) {
+		// An excel file name. You can create a file name with a full
+		// path information.
+		// String filename = Fame.toString();
+		// Create an ArrayList to store the data read from excel sheet.
+		List<List<XSSFCell>> sheetData = new ArrayList<>();
+		FileInputStream fis = new FileInputStream(filename)
+		// Create an excel workbook from the file system.
+		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		// Get the first sheet on the workbook.
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		// When we have a sheet object in hand we can iterator on
+		// each sheet's rows and on each row's cells. We store the
+		// data read on an ArrayList so that we can printed the
+		// content of the excel to the console.
+		Iterator rows = sheet.rowIterator();
+		while (rows.hasNext()) {
+			XSSFRow row = (XSSFRow) rows.next();
+			Iterator cells = row.cellIterator();
+			List<XSSFCell> data = new ArrayList<>();
+			while (cells.hasNext()) {
+				XSSFCell cell = (XSSFCell) cells.next();
+				data.add(cell);
+			}
+			sheetData.add(data);
+			System.out.println data
+			GlobalVariable.G_DBdata=data
+		}
+	}
+
+
 
 
 }
