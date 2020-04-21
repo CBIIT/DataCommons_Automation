@@ -20,7 +20,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class commonFunctions {
+public class ExtraFunctions {
 
 
 	//to get trimmed string********************************************************************************
@@ -111,7 +111,7 @@ public class commonFunctions {
 
 	//***********************************************************************************
 	// recursive helper to traverse the list by depth first, sort the list and return the values, along with printing them to log.
-	def getSortedList ( pListToSort ){
+	def getSortedList ( pListToSort ){  // for one dim only
 		try {
 			def sortedList	 =  ( pListToSort.sort { x, y -> x <=> y } )
 			return sortedList
@@ -125,7 +125,7 @@ public class commonFunctions {
 
 
 	// get sorted array ********************************************************************
-	def sortedArray ( pList, pVal ) {
+	def sortedArray ( pList, pVal ) {  // for one dim only
 		try {
 			if ( pVal != "" && pVal != null ) {
 				if ( pVal == "true" || pVal == true ) {
@@ -154,7 +154,7 @@ public class commonFunctions {
 
 	//************************************************************************************************************/
 
-	def differenceInLists ( pList1, pList2 ) {
+	def differenceInLists ( pList1, pList2 ) {  // for one dim only
 		try {
 			def commons = pList1.intersect(pList2)
 			def difference = pList1.plus(pList2)
@@ -175,6 +175,21 @@ public class commonFunctions {
 			log.error "     -- EXCEPTION ------------------------- : in method differenceInLists ( pList1, pList2 )"
 			assert e in MalformedURLException
 		}
+	}
+	
+	@Keyword
+	public void compareLists_1D() {  //public static void main () {
+		ArrayList<String> firstList=new ArrayList<String>(Arrays.asList("Orange", "Apple", "Kiwi","Banana"));
+		ArrayList<String> secondList=new ArrayList<String>(Arrays.asList("Banana", "Apple", "Kiwi", "Orange"));
+		System.out.println("First arraylist before sorting is: "+firstList);
+		//		sandbox_g cl = new sandbox_g();
+		//		cl.getSortedList(firstList)
+		ArrayList<String> sortedFirstList = getSortedList(firstList)
+		System.out.println("First arraylist after sorting is: "+sortedFirstList);
+		System.out.println("Second arraylist before sorting is: "+secondList);
+		ArrayList<String> sortedSecondList = getSortedList(secondList)
+		System.out.println("Second arraylist after sorting is: "+sortedSecondList);
+		differenceInLists(sortedFirstList,sortedSecondList)
 	}
 
 }
