@@ -71,7 +71,7 @@ public class ReadExcel {
 	//
 	//public static WebDriver driver = new ChromeDriver()
 
-///COMMITING APRIL21 EVENING -laxmi 
+	///COMMITING APRIL21 EVENING -laxmi
 	@Keyword
 	public static List<List<XSSFCell>> Test(String filename) { //added String filename
 		//Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "Input_TestData_G.xlsx");
@@ -407,18 +407,23 @@ public class ReadExcel {
 		// data read on an ArrayList so that we can printed the
 		// content of the excel to the console.
 		Iterator rows = sheet.rowIterator();
+		System.out.println("This is the row count from ExcelToArrayfunction : "+rows)
 		while (rows.hasNext()) {
 			XSSFRow row = (XSSFRow) rows.next();
 			Iterator cells = row.cellIterator();
 			List<XSSFCell> data = new ArrayList<>();
 			while (cells.hasNext()) {
 				XSSFCell cell = (XSSFCell) cells.next();
-				data.add(cell);
+				data.add(cell.toString());
 			}
 			sheetData.add(data);
-			System.out.println data
-			GlobalVariable.G_DBdata=data
+			System.out.println data //prints row level
+			System.out.println("This is a break after row level----*********")
 		}
+		System.out.println("I am starting to print the whole sheet data ---****************************")
+		System.out.println sheetData   //prints the whole sheetdata arraylist
+		System.out.println("End printing whole sheet data ---****************************")
+		GlobalVariable.G_DBdata=sheetData
 	}
 
 

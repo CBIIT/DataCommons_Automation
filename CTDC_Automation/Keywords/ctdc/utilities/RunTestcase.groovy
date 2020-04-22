@@ -27,6 +27,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Formatter;
+import java.util.List;
+import java.util.TimeZone;
+import java.util.concurrent.TimeUnit;
+
 
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
@@ -73,6 +79,8 @@ import java.nio.file.FileSystem;
 import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 
 import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.By as By
@@ -143,7 +151,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 //import static org.junit.Assert.*;
 import internal.GlobalVariable
-import ctdc.utilities.ReadExcel
+import ctdc.utilities.ReadExcel   //to use various functions from the class: ExcelToArray
 
 
 
@@ -292,8 +300,13 @@ public class RunTestcase implements Comparator<List<XSSFCell>>
 								break;
 
 							case("compare"):
+								String neo4jfilename =  GlobalVariable.G_ResultPath.toString();
+								List<List<String>> neo4jData = new ArrayList<>()
+							//System.out.println("This is the full neo4jfilepath after converting to string :"+neo4jfilename);
+								neo4jData = ReadExcel.ExcelToArray(neo4jfilename)
 
-								compareLists();
+								CompareCode_L(GlobalVariable.G_CaseData,GlobalVariable.G_DBdata)
+							//compareLists();  gayathri_uncomment this later
 								break;
 							case("StoreGlobal"):
 								GlobalVariable.(sheetData.get(ii).get(3).getStringCellValue())=sheetData.get(ii).get(6).getStringCellValue()
@@ -320,6 +333,9 @@ public class RunTestcase implements Comparator<List<XSSFCell>>
 				}
 			}
 		}
+
+		//gayathri added these lines
+
 	}
 
 	//----------------web data --------------
@@ -370,16 +386,18 @@ public class RunTestcase implements Comparator<List<XSSFCell>>
 		int columns_count = (colHeader.size())-1
 		System.out.println("No.of cols is : "+columns_count)
 
+
 		String hdrdata = ""
 		for(int c=1;c<=columns_count;c++){
-			hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
+			hdrdata = hdrdata + ((colHeader.get(c).getText()));
+			//hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
 		}
 		webData.add(hdrdata);
-		System.out.println("Size of web data list with header :" +webData.size())
-		for(int index = 0; index < webData.size(); index++) {
-			System.out.println("Web Data: with header data is :" + webData.get(index))
-		}
-
+		//		System.out.println("Size of web data list with header :" +webData.size())    gayathri uncomment 3 lines later
+		//		for(int index = 0; index < webData.size(); index++) {
+		//			System.out.println("Web Data: with header data is :" + webData.get(index))
+		//		}
+		driver.findElement(By.xpath('//*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button')).click() // G added this line to close the view
 		while(true)
 		{
 			rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
@@ -505,21 +523,86 @@ public class RunTestcase implements Comparator<List<XSSFCell>>
 
 		String neo4jfilename =  GlobalVariable.G_ResultPath.toString() ;
 		//String neo4jfilename = neo4jfilepath.toString()
-
 		System.out.println("This is the full neo4jfilepath after converting to string :"+neo4jfilename);
 
 		//readInputExcel rdExl = new readInputExcel() //only if the parent method is not declared static, creating object for readInputExcel class to access its 'Test' method to read xl
 		//neo4jData = ReadExcel.Test(neo4jfilename)
 		neo4jData = ReadExcel.ExcelToArray(neo4jfilename)
-		neo4jData = GlobalVariable.G_DBdata
+		/*gayathri commented - remove comment later*/neo4jData = GlobalVariable.G_DBdata
+		//*Gayathri added - delete this one*/GlobalVariable.G_DBdata = neo4jData
 		//System.out.println ("Before Sorting: This is the contents of ne04jdata : "+neo4jData);
-		System.out.println ("This is the row size of the ne04jdata : "+neo4jData.size());
+		System.out.println ("This is the row size of the ne04jdata : "+neo4jData.size());   //gayathri changed to GlobalVariable.G_DBdata.size()  from neo4jData.size()
 		//Collections.sort( neo4jData , new RunTestcase() )
 		//System.out.println ("After Sorting: This is the contents of Neo4JData : "+ neo4jData );
-
 		compareTwoLists( UIData, GlobalVariable.G_DBdata )
 
 	}
+
+	//************************************************************************
+	@Keyword
+	public static void CompareCode_L(List<List<String>> readWebData,List<List<String>> readExcel) {
+		//			ReadWebData readWebData = new ReadWebData();
+		//			ReadExcel readExcel = new ReadExcel();
+		//			List<String> webData = readWebData.readWebData();
+		//			List<String> excelData = readExcel.readExcel();
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+		String filename = "All_cases_results_"+timeStamp+".txt";
+		File file;
+		file = new File(filename);
+		System.out.println("Web Data size: " + readWebData.size());  //it worked
+		System.out.println("Excel Data size: " + readExcel.size());
+		for (int i = 0; i<readWebData.size(); i++) {
+			//if ((readWebData.get(i).trim()) == (readExcel.get(i).trim()) ) {  //with trim
+			if ( (readWebData.get(i)) == (readExcel.get(i)) ) {
+				//System.out.println("PASSED: " + webData.get(i));
+				writeResults (file, "PASSED: " + readWebData.get(i)+ "\n");
+			}
+			else{
+				//System.out.println("FAILED: " + "WEB: " + webData.get(i) + " EXCEL: " + excelData.get(i)+ "\n");
+				writeResults(file, "FAILED: " + "WEB: " + readWebData.get(i) + " EXCEL: " + readExcel.get(i)+ "\n");
+			}
+		}
+	}
+
+
+	public static void writeResults(File f, String st){
+
+		//DateFormat df = new SimpleDateFormat("yyyy-MM-dd_hh:mm:ss");
+		//df.setTimeZone(TimeZone.getTimeZone("EST"));
+		//String filename = df.format(new Date());
+		OutputStream os = null;
+		try {
+			// below true flag tells OutputStream to append
+			os = new FileOutputStream(f, true);
+			os.write(st.getBytes(), 0, st.length());
+			System.out.println("ADDED TO FILE");
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				os.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+
+	}
+
+
+
+
+
+
+	//***********************************************
+
+
+
+
+
+
+
+
 
 
 
