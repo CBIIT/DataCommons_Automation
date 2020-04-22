@@ -176,7 +176,7 @@ public class ExtraFunctions {
 			assert e in MalformedURLException
 		}
 	}
-	
+
 	@Keyword
 	public void compareLists_1D() {  //public static void main () {
 		ArrayList<String> firstList=new ArrayList<String>(Arrays.asList("Orange", "Apple", "Kiwi","Banana"));

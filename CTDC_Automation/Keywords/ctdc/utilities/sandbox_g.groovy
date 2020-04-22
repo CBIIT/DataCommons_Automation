@@ -80,5 +80,56 @@ public class sandbox_g {
 	 }
 	 }  */
 
+/*	public class CompareData {
+		public static void main(String[] args) {
+			ReadWebData readWebData = new ReadWebData();
+			ReadExcel readExcel = new ReadExcel();
+			List<String> webData = readWebData.readWebData();
+			List<String> excelData = readExcel.readExcel();
+			String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+			String filename = "All_cases_results_"+timeStamp+".txt";
+			File file;
+			file = new File(filename);
+			System.out.println("Web Data size: " + webData.size());
+			System.out.println("Excel Data size: " + excelData.size());
+			for (int i = 0; i < webData.size(); i++) {
+				if (webData.get(i).trim().equals(excelData.get(i).trim())) {
+					//System.out.println("PASSED: " + webData.get(i));
+					writeResults (file, "PASSED: " + webData.get(i)+ "\n");
+				} else {
+					//System.out.println("FAILED: " + "WEB: " + webData.get(i) + " EXCEL: " + excelData.get(i)+ "\n");
+					writeResults(file, "FAILED: " + "WEB: " + webData.get(i) + " EXCEL: " + excelData.get(i)+ "\n");
+				}
+			}
+		}
+		
+		
+		
+		public static void writeResults(File f, String st){
+			
+			//DateFormat df = new SimpleDateFormat("yyyy-MM-dd_hh:mm:ss");
+			//df.setTimeZone(TimeZone.getTimeZone("EST"));
+			//String filename = df.format(new Date());
+			OutputStream os = null;
+			try {
+				// below true flag tells OutputStream to append
+				os = new FileOutputStream(f, true);
+				os.write(st.getBytes(), 0, st.length());
+				System.out.println("ADDED TO FILE");
+			} catch (IOException e) {
+				e.printStackTrace();
+			} finally {
+				try {
+					os.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+			
+			
+		}
+	}
+	*/
+	
 
 }
