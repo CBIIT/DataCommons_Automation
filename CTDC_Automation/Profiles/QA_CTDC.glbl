@@ -129,4 +129,9 @@
       <initValue>[]</initValue>
       <name>G_DBdata</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_WebExcel</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

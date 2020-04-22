@@ -86,7 +86,6 @@ public class ReadExcel {
 		while (rows.hasNext()) {
 			XSSFRow row = (XSSFRow) rows.next();
 			Iterator cells = row.cellIterator();
-
 			List<XSSFCell> data = new ArrayList<>();
 			while (cells.hasNext()) {
 				XSSFCell cell = (XSSFCell) cells.next();
@@ -311,6 +310,10 @@ public class ReadExcel {
 					case("query"):
 						GlobalVariable.G_Query = sheetData.get(i).get(j).getStringCellValue()
 						System.out.println("This is the value of Url from Global :"+GlobalVariable.G_Query)
+						break;
+					case("WebExcel"):
+						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
+						System.out.println("This is the value of Url from Global :"+GlobalVariable.G_WebExcel)
 						break;
 					default :
 						System.out.println("Error in initializing")
