@@ -155,9 +155,9 @@ import ctdc.utilities.ReadExcel   //to use various functions from the class: Exc
 
 
 public class RunTestcase implements Comparator<List<XSSFCell>>{
-			public int compare( List<XSSFCell> l1, List<XSSFCell> l2 ){
-			return l1.get(0).getStringCellValue() .compareTo( l2.get(0).getStringCellValue() )
-		}
+	public int compare( List<XSSFCell> l1, List<XSSFCell> l2 ){
+		return l1.get(0).getStringCellValue() .compareTo( l2.get(0).getStringCellValue() )
+	}
 	// implements Comparator<List<XSSFCell>>{
 	//	public int compare( List<XSSFCell> l1, List<XSSFCell> l2 ){
 	//	return l1.get(0).getStringCellValue() .compareTo( l2.get(0).getStringCellValue() )
@@ -295,7 +295,7 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 								break;
 
 							case("compare"):
-								compareLists();  
+								compareLists();
 								break;
 							case("StoreGlobal"):
 								GlobalVariable.(sheetData.get(ii).get(3).getStringCellValue())=sheetData.get(ii).get(6).getStringCellValue()
@@ -372,7 +372,7 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 
 		WebElement tableHdr = driver.findElement(By.xpath(hdr_str))
 		List<WebElement> colHeader = tableHdr.findElements(By.tagName("th"));
-		int columns_count = (colHeader.size())-1  
+		int columns_count = (colHeader.size())-1
 		System.out.println("No.of cols is : "+columns_count)
 		String hdrdata = ""
 		for(int c=1;c<=columns_count;c++){
@@ -380,10 +380,10 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 			hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
 		}
 		webData.add(hdrdata);
-				System.out.println("Size of web data list with header :" +webData.size())    
-				for(int index = 0; index < webData.size(); index++) {
-					System.out.println("Web Data: with header data is :" + webData.get(index))
-				}
+		System.out.println("Size of web data list with header :" +webData.size())
+		for(int index = 0; index < webData.size(); index++) {
+			System.out.println("Web Data: with header data is :" + webData.get(index))
+		}
 		driver.findElement(By.xpath('//*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button')).click() // G added this line to close the view
 		while(true)
 		{
@@ -393,12 +393,12 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 
 			for(int i = 1; i <= rows_count; i++) { //rows_count
 				String data = ""
-				for (int j = 3; j < columns_count+12; j = j + 2) {  
-//	            String a = driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()
-//					System.out.println("This is the single row : "+a)
+				for (int j = 3; j < columns_count+12; j = j + 2) {
+					//	            String a = driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()
+					//					System.out.println("This is the single row : "+a)
 					data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 					//String b = driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" +  + "]")).getText()
-//					System.out.println("this is the value of j column iterator :"+ j)
+					//					System.out.println("this is the value of j column iterator :"+ j)
 				}
 				webData.add(data)
 				//ReadExcel.getElementID ( Table , 'COTC007B0101' ,driver )
@@ -417,45 +417,45 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 	}
 
 
-	
+
 	//*********************************************************************************
-	//function to write webData to excel -- this writes the web results to excel 
-	 		
+	//function to write webData to excel -- this writes the web results to excel
+
 	public static void writeToExcel(){
-			try
-			{
-				String excelPath = GlobalVariable.G_WebExcel;
-				FileOutputStream fos = new FileOutputStream(new File(excelPath));
-				XSSFWorkbook workbook = new XSSFWorkbook(); 		// Create Workbook instance holding .xls file
-				XSSFSheet sheet = workbook.createSheet("WebDataCanine"); 		// Create a new Worksheet
-				List<String> writeData = new ArrayList<String>();
-				writeData = GlobalVariable.G_CaseData
-				//System.out.println ("This is the value of writedata from excelpath function :"+writeData)
-				
-				for( int i = 0; i < writeData.size(); i++ ){
-					Row row = sheet.createRow(i);
-					int cellNo = 0
-					ArrayList<String> cellData = writeData.get(i).split("\\|\\|");
-					for( String cellD: cellData ){
-						System.out.println("Cell data is: " + cellD )
-						Cell cell = row.createCell(cellNo++);
-						cell.setCellValue(cellD);
-					}
-				}//for loop of in 
-					workbook.write(fos);  //Write workbook into the excel
-					fos.close(); //Close the workbook
-					System.out.println("Canine Web Data has been written to excel successfully");
-					workbook.close();
-					}catch (IOException ie)
-					{
-					ie.printStackTrace();
-					}
-/*					for( int j = 0; j < (writeData.get(i)).size(); j++ ){
-						System.out.println("Elements of each row: " + writeData.get(i).get(j))
-					}*/
+		try
+		{
+			String excelPath = GlobalVariable.G_WebExcel;
+			FileOutputStream fos = new FileOutputStream(new File(excelPath));
+			XSSFWorkbook workbook = new XSSFWorkbook(); 		// Create Workbook instance holding .xls file
+			XSSFSheet sheet = workbook.createSheet("WebDataCanine"); 		// Create a new Worksheet
+			List<String> writeData = new ArrayList<String>();
+			writeData = GlobalVariable.G_CaseData
+			//System.out.println ("This is the value of writedata from excelpath function :"+writeData)
+
+			for( int i = 0; i < writeData.size(); i++ ){
+				Row row = sheet.createRow(i);
+				int cellNo = 0
+				ArrayList<String> cellData = writeData.get(i).split("\\|\\|");
+				for( String cellD: cellData ){
+					System.out.println("Cell data is: " + cellD )
+					Cell cell = row.createCell(cellNo++);
+					cell.setCellValue(cellD);
+				}
+			}//for loop of in
+			workbook.write(fos);  //Write workbook into the excel
+			fos.close(); //Close the workbook
+			System.out.println("Canine Web Data has been written to excel successfully");
+			workbook.close();
+		}catch (IOException ie)
+		{
+			ie.printStackTrace();
+		}
+		/*					for( int j = 0; j < (writeData.get(i)).size(); j++ ){
+		 System.out.println("Elements of each row: " + writeData.get(i).get(j))
+		 }*/
 	}//excel method ends here
-		
-	
+
+
 	//**********************************************************************************
 	// fix this function to verify
 	public static verify_text( WebDriver driver ,String to_comp , String locator_id){
@@ -503,6 +503,7 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 					}
 
 				}else{
+				
 					// add what the code should display if contents mismatch outside the main loop for CTDC ID
 				}
 			}
@@ -514,56 +515,56 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 	public static void compareLists() {
 		List<List<XSSFCell>> UIData = new ArrayList<>()
 		List<List<XSSFCell>> neo4jData = new ArrayList<>()
-			//read ui results table data and store in 2d array
-		Path UIfilepath = Paths.get(System.getProperty("user.dir"), "TestData", "CanineDataWebData_1.xlsx");
-		String UIfilename = UIfilepath.toString()
+		//read ui results table data and store in 2d array
+		//Path UIfilepath = Paths.get(System.getProperty("user.dir"), "TestData", "CanineDataWebData_1.xlsx");
+		String UIfilename =  GlobalVariable.G_WebExcel.toString()   //UIfilepath.toString()
 		System.out.println("This is the full uifilepath after converting to string :"+UIfilename);
 		UIData = ReadExcel.Test(UIfilename)  //change the function name Test in parent class and here
 		System.out.println ("This is the row size of the UIdata : "+ UIData.size());
-		Collections.sort( UIData , new RunTestcase() )  
-		
+		Collections.sort( UIData , new RunTestcase() )
+
 		//System.out.println ("Before sorting: This is the contents of UIdata : "+ UIData);
 		//System.out.println ("After Sorting: This is the contents of UIdata : "+ UIData);
-		
-		Path neo4jfilepath =  Paths.get(System.getProperty("user.dir"), "TestData", "CanineDatafromNeo4j_1.xlsx");
-		String neo4jFilename = neo4jfilepath.toString()
-		System.out.println("This is the full neo4jfilename and path after converting to string :"+neo4jFilename);
-		neo4jData = ReadExcel.Test(neo4jFilename)
+
+		//Path neo4jfilepath =  Paths.get(System.getProperty("user.dir"), "TestData", "CanineDatafromNeo4j_1.xlsx");
+		//String neo4jFilename = neo4jfilepath.toString()
+		//System.out.println("This is the full neo4jfilename and path after converting to string :"+neo4jFilename);
+		neo4jData =   ReadExcel.Test(GlobalVariable.G_WebExcel.toString())   //ReadExcel.Test(neo4jFilename)
 		System.out.println ("This is the row size of the ne04jdata : "+neo4jData.size());   //gayathri changed to GlobalVariable.G_DBdata.size()  from neo4jData.size()
 		Collections.sort( neo4jData , new RunTestcase() )
 		//readInputExcel rdExl = new readInputExcel() //only if the parent method is not declared static, creating object for readInputExcel class to access its 'Test' method to read xl
 		//System.out.println ("Before Sorting: This is the contents of ne04jdata : "+neo4jData);
 		//System.out.println ("After Sorting: This is the contents of Neo4JData : "+ neo4jData );
-		
+
 		compareTwoLists(UIData,neo4jData)
 	}
 
 
 	//************************************************************************
-/*	@Keyword
-	public static void CompareCode_L(List<List<String>> readWebData,List<List<String>> readExcel) {
-		//			ReadWebData readWebData = new ReadWebData();
-		//			ReadExcel readExcel = new ReadExcel();
-		//			List<String> webData = readWebData.readWebData();
-		//			List<String> excelData = readExcel.readExcel();
-		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-		String filename = "All_cases_results_"+timeStamp+".txt";
-		File file;
-		file = new File(filename);
-		System.out.println("Web Data size: " + readWebData.size());  //it worked
-		System.out.println("Excel Data size: " + readExcel.size());
-		for (int i = 0; i<readWebData.size(); i++) {
-			//if ((readWebData.get(i).trim()) == (readExcel.get(i).trim()) ) {  //with trim
-			if ( (readWebData.get(i)) == (readExcel.get(i)) ) {
-				//System.out.println("PASSED: " + webData.get(i));
-				writeResults (file, "PASSED: " + readWebData.get(i)+ "\n");
-			}
-			else{
-				//System.out.println("FAILED: " + "WEB: " + webData.get(i) + " EXCEL: " + excelData.get(i)+ "\n");
-				writeResults(file, "FAILED: " + "WEB: " + readWebData.get(i) + " EXCEL: " + readExcel.get(i)+ "\n");
-			}
-		}
-	}*/
+	/*	@Keyword
+	 public static void CompareCode_L(List<List<String>> readWebData,List<List<String>> readExcel) {
+	 //			ReadWebData readWebData = new ReadWebData();
+	 //			ReadExcel readExcel = new ReadExcel();
+	 //			List<String> webData = readWebData.readWebData();
+	 //			List<String> excelData = readExcel.readExcel();
+	 String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+	 String filename = "All_cases_results_"+timeStamp+".txt";
+	 File file;
+	 file = new File(filename);
+	 System.out.println("Web Data size: " + readWebData.size());  //it worked
+	 System.out.println("Excel Data size: " + readExcel.size());
+	 for (int i = 0; i<readWebData.size(); i++) {
+	 //if ((readWebData.get(i).trim()) == (readExcel.get(i).trim()) ) {  //with trim
+	 if ( (readWebData.get(i)) == (readExcel.get(i)) ) {
+	 //System.out.println("PASSED: " + webData.get(i));
+	 writeResults (file, "PASSED: " + readWebData.get(i)+ "\n");
+	 }
+	 else{
+	 //System.out.println("FAILED: " + "WEB: " + webData.get(i) + " EXCEL: " + excelData.get(i)+ "\n");
+	 writeResults(file, "FAILED: " + "WEB: " + readWebData.get(i) + " EXCEL: " + readExcel.get(i)+ "\n");
+	 }
+	 }
+	 }*/
 
 
 	public static void writeResults(File f, String st){
