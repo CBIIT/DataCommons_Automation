@@ -166,12 +166,12 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 	public static WebDriver driver = new ChromeDriver()
 
 	@Keyword
-	public  void Run( String InputExcelname) {
+	public  void Run( String InputExcelname,String pwd_file) {
 
 		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", InputExcelname); // give the Input Excel Name in manual mode in TC
 		System.out.println("This is the full filepath after converting to string :"+filepath.toString());
-
-
+		Path file_pwd = Paths.get(System.getProperty("user.dir"), "TestData", pwd_file); // give the Input Excel Name in manual mode in TC
+		GlobalVariable.G_pwd_file=file_pwd.toString()
 		GlobalVariable.G_InputExcelFileName=filepath.toString()
 		List<List<XSSFCell>> sheetData = new ArrayList<>();
 		FileInputStream fis = new FileInputStream(filepath.toString());
@@ -183,7 +183,7 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 
 		//Workbook workbook1 = (Workbook) workbook;
 		//System.out.println( numberOfSheets)
-		XSSFSheet sheet = workbook.getSheetAt(1);  // Very important that we read the sheet 1 as its test case sheet
+		XSSFSheet sheet = workbook.getSheetAt(0);  //
 		countrow = sheet.lastRowNum- sheet.firstRowNum;
 		System.out.println ( "Row count is  : " + countrow);
 		countcol = sheet.getRow(0).getLastCellNum();
@@ -384,7 +384,7 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 		for(int index = 0; index < webData.size(); index++) {
 			System.out.println("Web Data: with header data is :" + webData.get(index))
 		}
-		driver.findElement(By.xpath('//*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button')).click() // G added this line to close the view
+		//driver.findElement(By.xpath('//*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button')).click() // G added this line to close the view
 		while(true)
 		{
 			rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
@@ -393,7 +393,7 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 
 			for(int i = 1; i <= rows_count; i++) { //rows_count
 				String data = ""
-				for (int j = 3; j < columns_count+12; j = j + 2) {
+				for (int j = 3; j < columns_count+10; j = j + 2) {
 					//	            String a = driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()
 					//					System.out.println("This is the single row : "+a)
 					data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
@@ -412,7 +412,7 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 		}
 		//nextButton.click()
 		GlobalVariable.G_CaseData= webData;
-		System.out.println("This is the value stored in global variable g_casedata : "+GlobalVariable.G_CaseData)
+		//System.out.println("This is the value stored in global variable g_casedata : "+GlobalVariable.G_CaseData)
 		writeToExcel();
 	}
 
@@ -437,7 +437,7 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 				int cellNo = 0
 				ArrayList<String> cellData = writeData.get(i).split("\\|\\|");
 				for( String cellD: cellData ){
-					System.out.println("Cell data is: " + cellD )
+					//System.out.println("Cell data is: " + cellD )
 					Cell cell = row.createCell(cellNo++);
 					cell.setCellValue(cellD);
 				}
@@ -503,7 +503,7 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 					}
 
 				}else{
-				
+
 					// add what the code should display if contents mismatch outside the main loop for CTDC ID
 				}
 			}
@@ -529,7 +529,7 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 		//Path neo4jfilepath =  Paths.get(System.getProperty("user.dir"), "TestData", "CanineDatafromNeo4j_1.xlsx");
 		//String neo4jFilename = neo4jfilepath.toString()
 		//System.out.println("This is the full neo4jfilename and path after converting to string :"+neo4jFilename);
-		neo4jData =   ReadExcel.Test(GlobalVariable.G_WebExcel.toString())   //ReadExcel.Test(neo4jFilename)
+		neo4jData =   ReadExcel.Test(GlobalVariable.G_ResultPath.toString())   //ReadExcel.Test(neo4jFilename)
 		System.out.println ("This is the row size of the ne04jdata : "+neo4jData.size());   //gayathri changed to GlobalVariable.G_DBdata.size()  from neo4jData.size()
 		Collections.sort( neo4jData , new RunTestcase() )
 		//readInputExcel rdExl = new readInputExcel() //only if the parent method is not declared static, creating object for readInputExcel class to access its 'Test' method to read xl

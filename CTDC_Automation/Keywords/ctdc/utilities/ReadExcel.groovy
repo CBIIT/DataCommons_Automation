@@ -230,7 +230,7 @@ public class ReadExcel {
 
 
 		List<List<XSSFCell>> sheetData = new ArrayList<>();  // Create an ArrayList to store the data read from excel sheet
-		FileInputStream fis = new FileInputStream(GlobalVariable.G_InputExcelFileName);  //give GlobalVariable.G_InputExcelFileName
+		FileInputStream fis = new FileInputStream(GlobalVariable.G_pwd_file);  //give GlobalVariable.G_InputExcelFileName
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		int numberOfSheets = workbook.getNumberOfSheets(); 	// Get the  sheets on the workbook.
 		System.out.println("Total number of sheets in the excel: "+numberOfSheets)
@@ -296,7 +296,11 @@ public class ReadExcel {
 						System.out.println("This is the value of DB password from Global :"+GlobalVariable.G_Password)
 						break;
 					case("location_path"):
-						GlobalVariable.G_ResultPath = sheetData.get(i).get(j).getStringCellValue()
+							GlobalVariable.G_ResultPath = sheetData.get(i).get(j).getStringCellValue()
+							Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", GlobalVariable.G_ResultPath)
+							System.out.println("This is the value of Url from Global :"+GlobalVariable.G_ResultPath)
+							GlobalVariable.G_ResultPath=filepath.toString()
+								//GlobalVariable.G_ResultPath = sheetData.get(i).get(j).getStringCellValue()
 						System.out.println("This is the value of excel path to store DB data from Global :"+GlobalVariable.G_ResultPath)
 						break;
 					case("Environment"):
@@ -313,7 +317,10 @@ public class ReadExcel {
 						break;
 					case("WebExcel"):
 						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
+						Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", GlobalVariable.G_WebExcel)
 						System.out.println("This is the value of Url from Global :"+GlobalVariable.G_WebExcel)
+						
+						GlobalVariable.G_WebExcel=filepath.toString()
 						break;
 					default :
 						System.out.println("Error in initializing")

@@ -15,6 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'ctdc.utilities.ReadExcel.initialLoad'()
+//CustomKeywords.'ctdc.utilities.RunTestcase.Run'()
+//CustomKeywords.'ctdc.utilities.RunTestcase.Run'('Input_TestData_CanineWorkflow.xlsx')
+CustomKeywords.'ctdc.utilities.RunTestcase.Run'('Input_TestData_CanineWorkflow.xlsx', 'Passwordfile.xlsx')
 
-CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
