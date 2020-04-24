@@ -134,4 +134,9 @@
       <initValue>''</initValue>
       <name>G_WebExcel</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_pwd_file</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
