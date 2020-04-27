@@ -404,9 +404,9 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 				//ReadExcel.getElementID ( Table , 'COTC007B0101' ,driver )
 			}
 			System.out.println("Size of Web Data list with header in current page is : " + webData.size())
-			for(int index = 0; index < webData.size(); index++) {
-				System.out.println("Web Data: from current page is" + webData.get(index))
-			}
+//			for(int index = 0; index < webData.size(); index++) {
+//				System.out.println("Web Data: from current page is" + webData.get(index))
+//			}
 			if (!nextButton.isEnabled()) break;
 			nextButton.click()
 		}
@@ -529,7 +529,11 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 		//Path neo4jfilepath =  Paths.get(System.getProperty("user.dir"), "TestData", "CanineDatafromNeo4j_1.xlsx");
 		//String neo4jFilename = neo4jfilepath.toString()
 		//System.out.println("This is the full neo4jfilename and path after converting to string :"+neo4jFilename);
+<<<<<<< HEAD
 		neo4jData =   ReadExcel.Test(GlobalVariable.G_ResultPath.toString())   //ReadExcel.Test(neo4jFilename)
+=======
+		neo4jData =   ReadExcel.Test(GlobalVariable.G_DBdata.toString())   //ReadExcel.Test(neo4jFilename)
+>>>>>>> TryingCSVReadCompare
 		System.out.println ("This is the row size of the ne04jdata : "+neo4jData.size());   //gayathri changed to GlobalVariable.G_DBdata.size()  from neo4jData.size()
 		Collections.sort( neo4jData , new RunTestcase() )
 		//readInputExcel rdExl = new readInputExcel() //only if the parent method is not declared static, creating object for readInputExcel class to access its 'Test' method to read xl
