@@ -17,5 +17,9 @@ import internal.GlobalVariable as GlobalVariable
 
 //CustomKeywords.'ctdc.utilities.RunTestcase.Run'()
 //CustomKeywords.'ctdc.utilities.RunTestcase.Run'('Input_TestData_CanineWorkflow.xlsx')
+<<<<<<< HEAD:CTDC_Automation/Scripts/TC_1/Script1587751131844.groovy
 CustomKeywords.'ctdc.utilities.RunTestcase.Run'('Input_TestData_CanineWorkflow.xlsx', 'Passwordfile.xlsx')
+=======
+CustomKeywords.'ctdc.utilities.sandbox_g.comparison'()
+>>>>>>> TryingCSVReadCompare:CTDC_Automation/Scripts/Trial_G/Script1587438450772.groovy
 
