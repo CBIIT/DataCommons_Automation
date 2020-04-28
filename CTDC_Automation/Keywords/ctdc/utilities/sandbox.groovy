@@ -42,6 +42,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import internal.GlobalVariable
+//import ctdc.utilities.RunTestcase
 
 public class sandbox  {
 
@@ -233,12 +234,222 @@ public class sandbox  {
 	}
 
 
-@Keyword
-public static checkLastpage()
-{
-	
-	
-	
-}	
+	@Keyword
+	public static clicking()
+	{
 
+		WebDriver driver = new ChromeDriver()
+		//String nxt_str
+		driver.get("https://caninecommons.cancer.gov/#/cases")
+		driver.manage().window().maximize();
+		Thread.sleep(3000)
+		String Study ="//span[(text()='Study')]//parent::div//parent::div//parent::div"
+		String COT= "//span[contains(text(),'COTC007B')]//parent::div//parent::div"
+		String Brd="//span[contains(text(),'Breed')]"
+		String AmSt= "//span[contains(text(),'American Staffordshire Terrier ')]//parent::div//parent::div"
+		String Bass ="//span[contains(text(),'Basset Hound  (2)')]//parent::div//parent::div"
+
+		//		driver.findElement(By.xpath(Study)).click()
+		//		Thread.sleep(3000)
+		//		driver.findElement(By.xpath(COT)).click()
+		//		Thread.sleep(3000)
+		//		driver.findElement(By.xpath(Brd)).click()
+		//		driver.findElement(By.xpath(AmSt)).click()
+		//		driver.findElement(By.xpath(Bass)).click()
+		//		Thread.sleep(3000)
+		WebElement nextButton2 = driver.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div/div[4]/div[2]/div/table/tfoot/tr/td[2]/div/div[3]/button[2]"));
+		////adding the read daa web data function
+		List<String> webData = new ArrayList<String>();
+		driver.manage().window().maximize();        // WebDriver driver = DriverFactory.getWebDriver()
+		Thread.sleep(3000)
+
+		String tbl_str= "//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table"         //GlobalVariable.G_cannine_caseTbl 			//"//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table"
+		String hdr_str= "//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead" //    GlobalVariable.G_cannine_caseHdr			//"//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead"
+		//String nxt_str=	"//span[contains(text(),'Row')]//parent::div//button[@tabindex='0']"   //GlobalVariable.G_cannine_NxtBtn			    //"//span[contains(text(),'Row')]//parent::div//button[@tabindex='0']"
+		String tbl_bdy="//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//following-sibling::tbody"  //	  GlobalVariable.G_cannine_caseTblBdy								//"//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//following-sibling::tbody"
+
+		WebElement Table =driver.findElement(By.xpath(tbl_str))
+		List<WebElement> rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
+		int rows_count = rows_table.size()
+		System.out.println("This is the size of the rows in the table in first page:"+(rows_count))
+		//WebElement nextButton = driver.findElement(By.xpath(nxt_str));
+
+		WebElement tableHdr = driver.findElement(By.xpath(hdr_str))
+		List<WebElement> colHeader = tableHdr.findElements(By.tagName("th"));
+		int columns_count = (colHeader.size())-1
+		System.out.println("No.of cols is : "+columns_count)
+
+		String hdrdata = ""
+		for(int c=1;c<=columns_count;c++){
+			hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
+		}
+		webData.add(hdrdata);
+		System.out.println("Size of web data list with header :" +webData.size())
+		for(int index = 0; index < webData.size(); index++) {
+			System.out.println("Web Data: with header data is :" + webData.get(index))
+		}
+		while (true)
+		{
+			rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
+
+			rows_count = rows_table.size()
+			System.out.println("This is the size of the rows in the table in the current page:"+(rows_count))
+
+			for(int i = 1; i <= rows_count; i++) {
+				String data = ""
+				for (int j = 1; j < columns_count+10; j = j + 2) {
+
+					data = data + (driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]"))
+							.getText() )
+				}
+
+
+				webData.add(data)
+				//ReadExcel.getElementID ( Table , 'COTC007B0101' ,driver )
+			}
+			System.out.println("Size of Web Data list with header in current page is : " + webData.size())
+			for(int index = 0; index < webData.size(); index++) {
+				System.out.println("Web Data: from current page is" + webData.get(index))
+			}
+
+
+			//	if (!nextButton.isEnabled()) break;
+			//nextButton2.click()
+			if (nextButton2.getAttribute("disabled"))break;
+			nextButton2.click()
+
+		}
+
+
+
+
+
+
+		//		 {
+		//
+		//			System.out.println( "Button disabled : " +  webData)
+		//
+		//			 //break
+		//			 }
+		//		 else{
+
+		//}
+		//nextButton.click()
+		System.out.println("Web Data:FINALLY " + webData)
+
+		//GlobalVariable.G_CaseData= webData;
+		//System.out.println GlobalVariable.G_CaseData
+
+
+		/////  end eweb data function
+
+
+
+
+		//nxt_str= "//span[contains(text(),'Row')]//parent::div//button[@tabindex='0']"
+		////*[@id="root"]/div[3]/div/div[4]/div[2]/div/table/tfoot/tr/td[2]/div/div[3]
+
+
+
+		WebElement nextButton1  = driver.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div/div[4]/div[2]/div/table/tfoot/tr/td[2]/div/div[3]/button[1]"));       //*[@id="root"]/div[3]/div/div[4]/div[2]/div/table/tfoot/tr/td[2]/div/div[3]/button[1
+
+
+
+
+		//	nextButton.click()
+		System.out.println (  "Button1"  + nextButton1.getAttribute("class"))
+
+		System.out.println ( "Button1"  +   nextButton1.getAttribute("disabled"))
+
+		System.out.println (  "Button2"  + nextButton2.getAttribute("class"))
+
+		System.out.println ( "Button2"  +   nextButton2.getAttribute("disabled"))
+		//nextButton2.click()
+
+		//		if (!nextButton.isEnabled())
+		//		{
+		//			System.out.println ("Not enabled")
+		//
+		//		} else {
+		//
+		//			System.out.println (" Enabled ")
+		//		}
+		//int i = 0
+		//		while (nextButton2.getAttribute("disabled") !="true"){
+		//			System.out.println ( "Page is : " +  i)
+		//			System.out.println ( "Button2 beforeclicking"  +   nextButton2.getAttribute("disabled"))
+		//			RunTestcase.ReadCasesTable(driver)
+		//			nextButton2.click()
+		//
+		//			i++
+		//			System.out.println ( "Button2 After Clicking"  +   nextButton2.getAttribute("disabled"))
+
+	}
+
+	@Keyword
+	public static tablesize(){
+		WebDriver driver = new ChromeDriver()
+		//String nxt_str
+		driver.get("https://trialcommons-qa.cancer.gov/#/cases")
+		driver.manage().window().maximize();
+		Thread.sleep(3000)
+		String Study ="//span[(text()='Study')]//parent::div//parent::div//parent::div"
+		String COT= "//span[contains(text(),'COTC007B')]//parent::div//parent::div"
+		String Brd="//span[contains(text(),'Breed')]"
+		String AmSt= "//span[contains(text(),'American Staffordshire Terrier ')]//parent::div//parent::div"
+		String Bass ="//span[contains(text(),'Basset Hound  (2)')]//parent::div//parent::div"
+
+		//		driver.findElement(By.xpath(Study)).click()
+		//		driver.findElement(By.xpath(COT)).click()
+		//		driver.findElement(By.xpath(Brd)).click()
+		//		driver.findElement(By.xpath(AmSt)).click()
+		//		driver.findElement(By.xpath(Bass)).click()
+		//		WebElement nextButton2 = driver.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div/div[4]/div[2]/div/table/tfoot/tr/td[2]/div/div[3]/button[2]"));
+		//		////adding the read daa web data function
+		List<String> webData = new ArrayList<String>();
+		driver.manage().window().maximize();        // WebDriver driver = DriverFactory.getWebDriver()
+		Thread.sleep(3000)
+
+		//String tbl_str= "//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table"         //GlobalVariable.G_cannine_caseTbl 			//"//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table"
+		//String hdr_str= "//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead" //    GlobalVariable.G_cannine_caseHdr			//"//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead"
+		//String nxt_str=	"//span[contains(text(),'Row')]//parent::div//button[@tabindex='0']"   //GlobalVariable.G_cannine_NxtBtn			    //"//span[contains(text(),'Row')]//parent::div//button[@tabindex='0']"
+		//String tbl_bdy="//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//following-sibling::tbody"  //	  GlobalVariable.G_cannine_caseTblBdy								//"//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//following-sibling::tbody"
+
+		///////////////Trial COmmons ///////////////////////
+
+		String tbl_str="//div[contains(@id,'table_cases')]//div//div//table"
+		String hdr_str="//div[contains(@id,'table_cases')]//div//div//table//thead"
+		String tbl_bdy=tbl_str + "/tbody"
+
+
+
+		WebElement Table =driver.findElement(By.xpath(tbl_str))
+		List<WebElement> rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
+		int rows_count = rows_table.size()
+		//System.out.println("This is the size of the rows in the table in first page:"+(rows_count))
+
+
+		WebElement TogetRows = driver.findElement(By.xpath(tbl_str + "/tbody"));
+
+		List<WebElement>TotalRowsList = TogetRows.findElements(By.tagName("tr"));
+		System.out.println("Total number of Rows in the table are : "+ TotalRowsList.size());
+		List<WebElement> ToGetColumns = driver.findElements(By.xpath(tbl_str + "/tbody/tr/th"));
+		List<WebElement> ToGetColumnshdr = driver.findElements(By.xpath(hdr_str+"/td"));
+		List<WebElement> TotalColsList = driver.findElements(By.tagName("td"));
+		System.out.println("Total Number of Columns in the table are: "+TotalColsList.size());
+		System.out.println("Total Number of Columns in the table HEADER are: "+ToGetColumnshdr.size());
+		System.out.println("Total Number of in ToGetColumns : "+ToGetColumnshdr.size());
+
+	}
+	//
 }
+
+
+
+//*[@id="MUIDataTableBodyRow-16"]/td[3]/div/a
+//*[@id="MUIDataTableBodyRow-16"]/td[5]/div/a
+//*[@id="MUIDataTableBodyRow-42"]/td[15]/div
+//*[@id="MUIDataTableBodyRow-42"]/td[17]/div
+
+
+

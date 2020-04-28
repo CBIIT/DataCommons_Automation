@@ -298,6 +298,20 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 								compareLists();
 								break;
 							case("StoreGlobal"):
+
+							//							//XSSFCell cell = sheetData.get(ii).createCell(j);
+							//										XSSFCell  cell = sheetData.get(ii).get(6).row.getCell(j).getCellTypeEnum();
+							//
+							//							switch(cell) {
+							//								case ("NUMERIC"):
+							//									GlobalVariable.(sheetData.get(ii).get(3).getStringCellValue()) =sheetData.get(ii).get(6).getNumericCellValue();
+							//									//System.out.print(intVal);
+							//									break;
+							//								case ("STRING"):
+							//									GlobalVariable.(sheetData.get(ii).get(3).getStringCellValue()) = sheetData.get(ii).get(6).getStringCellValue();
+							//									//System.out.print(stringVal);
+							//									break;
+							//							}
 								GlobalVariable.(sheetData.get(ii).get(3).getStringCellValue())=sheetData.get(ii).get(6).getStringCellValue()
 							//System.out.println GlobalVariable.(sheetData.get(ii).get(3).getStringCellValue())
 							//System.out.println GlobalVariable.G_cannine_caseTbl
@@ -393,7 +407,9 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 
 			for(int i = 1; i <= rows_count; i++) { //rows_count
 				String data = ""
-				for (int j = 3; j < columns_count+10; j = j + 2) {
+				int tblcol=Integer.parseInt(GlobalVariable.G_rowcount);
+
+				for (int j = 3; j < tblcol; j = j + 2) {
 					//	            String a = driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()
 					//					System.out.println("This is the single row : "+a)
 					data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
@@ -407,7 +423,7 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 			for(int index = 0; index < webData.size(); index++) {
 				System.out.println("Web Data: from current page is" + webData.get(index))
 			}
-			if (!nextButton.isEnabled()) break;
+			if (nextButton.getAttribute("disabled")) break;
 			nextButton.click()
 		}
 		//nextButton.click()

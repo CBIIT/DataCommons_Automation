@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_1</name>
+   <name>TC_Canine_2</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ffbf257a-1ea1-495c-9216-04eea8400cb9</testCaseGuid>
+   <testCaseGuid>1819cba2-1dae-452a-b301-ec7ef3550b1a</testCaseGuid>
 </TestCaseEntity>
