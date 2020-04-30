@@ -403,13 +403,16 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 				
 			}
 			System.out.println("Size of Web Data list with header in current page is : " + webData.size())
+
 			for(int index = 0; index < webData.size(); index++) {
 				System.out.println("Web Data: from current page is" + webData.get(index))
 			}
 			if (nextButton.getAttribute("disabled")) break;
+
+
+
 			nextButton.click()
 		}
-	
 		GlobalVariable.G_CaseData= webData;
 		
 		writeToExcel();
@@ -518,7 +521,10 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 		System.out.println ("This is the row size of the UIdata : "+ UIData.size());
 		Collections.sort( UIData , new RunTestcase() )
 
+
 		neo4jData =   ReadExcel.Test(GlobalVariable.G_ResultPath.toString())   //ReadExcel.Test(neo4jFilename)
+
+		neo4jData =   ReadExcel.Test(GlobalVariable.G_DBdata.toString())   //ReadExcel.Test(neo4jFilename)
 		System.out.println ("This is the row size of the ne04jdata : "+neo4jData.size());   //gayathri changed to GlobalVariable.G_DBdata.size()  from neo4jData.size()
 		Collections.sort( neo4jData , new RunTestcase() )
 
