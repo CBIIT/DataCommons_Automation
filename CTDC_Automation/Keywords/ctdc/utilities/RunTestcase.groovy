@@ -403,14 +403,10 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 				
 			}
 			System.out.println("Size of Web Data list with header in current page is : " + webData.size())
-
-			for(int index = 0; index < webData.size(); index++) {
-				System.out.println("Web Data: from current page is" + webData.get(index))
-			}
-			if (nextButton.getAttribute("disabled")) break;
-
-
-
+//			for(int index = 0; index < webData.size(); index++) {
+//				System.out.println("Web Data: from current page is" + webData.get(index))
+//			}
+			if (!nextButton.isEnabled()) break;
 			nextButton.click()
 		}
 		GlobalVariable.G_CaseData= webData;
