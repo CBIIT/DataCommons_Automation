@@ -139,4 +139,9 @@
       <initValue>''</initValue>
       <name>G_pwd_file</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_rowcount</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -70,6 +70,7 @@ import ctdc.utilities.ConnectDB
 public class ReadExcel {
 	//
 	//public static WebDriver driver = new ChromeDriver()
+	//public static WebDriver driver = new ChromeDriver()
 
 	///COMMITING APRIL21 EVENING -laxmi
 	@Keyword
@@ -280,9 +281,20 @@ public class ReadExcel {
 				switch(sheetData.get(0).get(j).getStringCellValue().trim() ) //First ROW
 				{
 					case("Browser"): //browser switch case is a separate function. refer and correct this chunk
-						GlobalVariable.G_Browser = sheetData.get(i).get(j).getStringCellValue()
-						System.out.println ("This is the value of Browser from Global : " +GlobalVariable.G_Browser)
-						break;
+					// switch (sheetData.get(i).get(j).getStringCellValue()).trim():
+					//						 case("Chrome"):
+					//									GlobalVariable.G_Browser = sheetData.get(i).get(j).getStringCellValue()
+					//									System.out.println ("This is the value of Browser from Global : " +GlobalVariable.G_Browser)
+					//									break;
+					//						case("Firefox"):
+					//									GlobalVariable.G_Browser = sheetData.get(i).get(j).getStringCellValue()
+					//									System.out.println ("This is the value of Browser from Global : " +GlobalVariable.G_Browser)
+					//									break;
+					//						default:
+					//
+									break;
+
+
 					case("server"):
 						GlobalVariable.G_server = sheetData.get(i).get(j).getStringCellValue()
 						System.out.println("This is the value of server from Global :"+GlobalVariable.G_server)
@@ -296,11 +308,11 @@ public class ReadExcel {
 						System.out.println("This is the value of DB password from Global :"+GlobalVariable.G_Password)
 						break;
 					case("location_path"):
-							GlobalVariable.G_ResultPath = sheetData.get(i).get(j).getStringCellValue()
-							Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", GlobalVariable.G_ResultPath)
-							System.out.println("This is the value of Url from Global :"+GlobalVariable.G_ResultPath)
-							GlobalVariable.G_ResultPath=filepath.toString()
-								//GlobalVariable.G_ResultPath = sheetData.get(i).get(j).getStringCellValue()
+						GlobalVariable.G_ResultPath = sheetData.get(i).get(j).getStringCellValue()
+						Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", GlobalVariable.G_ResultPath)
+						System.out.println("This is the value of Url from Global :"+GlobalVariable.G_ResultPath)
+						GlobalVariable.G_ResultPath=filepath.toString()
+					//GlobalVariable.G_ResultPath = sheetData.get(i).get(j).getStringCellValue()
 						System.out.println("This is the value of excel path to store DB data from Global :"+GlobalVariable.G_ResultPath)
 						break;
 					case("Environment"):
@@ -319,7 +331,7 @@ public class ReadExcel {
 						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
 						Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", GlobalVariable.G_WebExcel)
 						System.out.println("This is the value of Url from Global :"+GlobalVariable.G_WebExcel)
-						
+
 						GlobalVariable.G_WebExcel=filepath.toString()
 						break;
 					default :
