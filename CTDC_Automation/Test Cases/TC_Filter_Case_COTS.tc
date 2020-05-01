@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_Canine_2</name>
+   <name>TC_Filter_Case_COTS</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>1819cba2-1dae-452a-b301-ec7ef3550b1a</testCaseGuid>

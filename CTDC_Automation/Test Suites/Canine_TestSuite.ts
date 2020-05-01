@@ -14,6 +14,6 @@
       <guid>177e4011-ddcd-4c6f-89c6-9363ee7d4496</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC_Canine_1</testCaseId>
+      <testCaseId>Test Cases/TC_Filter_CaseTable_All</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
