@@ -126,12 +126,12 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 					case("locateby"):
 						GlobalVariable.G_locateby = sheetData.get(ii).get(jj).getStringCellValue()
 						KeywordUtil.logInfo( " Property name set in  G_locateby :  " + GlobalVariable.G_locateby )
-						
+
 						break;
 					case("locatorvalue"):
 						GlobalVariable.G_locatorvalue = sheetData.get(ii).get(jj).getStringCellValue()
 						KeywordUtil.logInfo( " Property name set in  G_locatorvalue :  " + GlobalVariable.G_locatorvalue )
-						
+
 						break;
 					case("action"):
 						GlobalVariable.G_Action = sheetData.get(ii).get(jj).getStringCellValue()
@@ -296,7 +296,7 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 				String data = ""
 				int tblcol=Integer.parseInt(GlobalVariable.G_rowcount);
 
-				for (int j = 3; j < tblcol; j = j + 2) {
+				for (int j = 3; j < columns_count+tblcol; j = j + 2) {
 
 					data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 
@@ -424,7 +424,7 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 
 
 
-		@Keyword
+	@Keyword
 	public static void compareLists() {
 		List<List<XSSFCell>> UIData = new ArrayList<>()
 		List<List<XSSFCell>> neo4jData = new ArrayList<>()

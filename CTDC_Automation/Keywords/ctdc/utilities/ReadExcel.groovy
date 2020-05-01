@@ -22,10 +22,12 @@ import com.kms.katalon.core.annotation.Keyword
 
 import internal.GlobalVariable
 public class ReadExcel {
+
 	
 	@Keyword
-	public static List<List<XSSFCell>> Test(String filename) { //added String filename
-		
+	public static List<List<XSSFCell>> Test(String filename) {
+		//added String filename
+
 		List<List<XSSFCell>> sheetData = new ArrayList<>();  // Create a 2dimensional ArrayList to store the data read from excel sheet
 		FileInputStream fis = new FileInputStream(filename);  //removed filepath.toString()
 		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
@@ -49,17 +51,17 @@ public class ReadExcel {
 
 
 
-//************************************************************************************	
-	
+	//************************************************************************************
+
 	@Keyword
 	public static List<List<XSSFCell>> readExceltoWeblist(String filename) {
-//		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "WebData_canine_TC1.xlsx"); // give the Input Excel Name in manual mode in TC
-//		String filename =  filepath.toString()
+		//		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "WebData_canine_TC1.xlsx"); // give the Input Excel Name in manual mode in TC
+		//		String filename =  filepath.toString()
 		System.out.println("This is the full uifilepath after converting to string: "+ filename);
-		
+
 		//UIData = ReadExcel.Test(UIfilename)  //change the function name Test in parent class and here
 		//UIData = ReadExcel.readExceltoWeblist(UIfilename)  //change the function name Test in parent class and here
-		
+
 		System.out.println('Filename is '+ filename)
 		List<List<XSSFCell>> allValues = new ArrayList<>();
 		FileInputStream fis = new FileInputStream(filename);  //removed filepath.toString()
@@ -82,28 +84,28 @@ public class ReadExcel {
 			}
 			allValues.add(currList)
 		}
-//		for( int row = 0; row < allValues.size(); row++ ){
-//			String 	toPrint = ""
-//			for(int col = 0; col < allValues.get(0).size(); col++ ){
-//				toPrint += allValues.get(row).get(col) == null ? '':allValues.get(row).get(col).getStringCellValue().trim()
-//				if( col < allValues.get(0).size() - 1 ) toPrint += ","
-//			}
-//			System.out.println("Printing row: " + row + "Val is: " + toPrint)
-//		}
+		//		for( int row = 0; row < allValues.size(); row++ ){
+		//			String 	toPrint = ""
+		//			for(int col = 0; col < allValues.get(0).size(); col++ ){
+		//				toPrint += allValues.get(row).get(col) == null ? '':allValues.get(row).get(col).getStringCellValue().trim()
+		//				if( col < allValues.get(0).size() - 1 ) toPrint += ","
+		//			}
+		//			System.out.println("Printing row: " + row + "Val is: " + toPrint)
+		//		}
 
-	//			System.out.println("This is the data read after going through Test function : "+UIData)
+		//			System.out.println("This is the data read after going through Test function : "+UIData)
 		//System.out.println ("This is the row size of the UIdata : "+ UIData.size());
 		//Collections.sort( UIData , new RunTestcase() )
 		return allValues
 
 	}
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	//*****************************************************************
 
 
@@ -138,7 +140,7 @@ public class ReadExcel {
 		Test1.run(neo4jServer,userName,pwd, query,output)
 	}
 
-	
+
 
 	@Keyword
 	public static  void initialLoad() {    // this reads sheet 0, predecessor for connecting to DB
@@ -257,7 +259,7 @@ public class ReadExcel {
 		System.out.println ("******************END PRINGING**********************************")
 	}
 
-	
+
 
 	@Keyword
 	public static  ExcelToArray( String filename) {
@@ -279,11 +281,11 @@ public class ReadExcel {
 			System.out.println data //prints row level
 			System.out.println("This is a break after row level----*********")
 		}
-		
+
 		GlobalVariable.G_DBdata=sheetData
 	}
 
-	
+
 
 
 
