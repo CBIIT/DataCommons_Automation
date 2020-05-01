@@ -1,6 +1,5 @@
 package ctdc.utilities
 
-import static org.junit.Assert.*;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
