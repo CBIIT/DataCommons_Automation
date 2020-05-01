@@ -376,7 +376,6 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 	// verify element present
 
 
-
 	//compare lists***********************************************************
 	public static void compareTwoLists( List<List<XSSFCell>> l1, List<List<XSSFCell>> l2 ){
 		System.out.println ("Comparing two Lists");
@@ -390,7 +389,20 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 				if( l2rowList.get(0).getStringCellValue() == l1rowList.get(0).getStringCellValue() ) //takes CTDCID as the primary key for comparison
 				{
 					System.out.println(" L1Row contents Matched with: " + l1rowList + " and: " + l2rowList )
+					boolean l1NullFlag = false, l2NullFlag = false
 					for(int col = 0; col < l2rowList.size(); col++ ){ //compares all the columns in the excels - for each row
+						if( l1rowList.get(col) == null || l1rowList.get(col).equals("") || l1rowList.get(col).getCellType() == l1rowList.get(col).CELL_TYPE_BLANK ){
+							System.out.println("There is a NULL entry in L1 Row")
+							l1NullFlag = true
+						}
+						if( l2rowList.get(col) == null || l2rowList.get(col).equals("") || l2rowList.get(col).getCellType() == l2rowList.get(col).CELL_TYPE_BLANK ){
+							System.out.println("There is a NULL entry in L2 Row")
+							l2NullFlag = true
+						}
+						if( l1NullFlag == l2NullFlag )	System.out.println("Content Matches for col: "+ col)
+						else System.out.println("Content does not match for col: " + col )
+						if( l1NullFlag || l2NullFlag )	continue
+							System.out.println("L1Cell: "+ l1rowList.get(col).getStringCellValue() + " L2 Cell: "+ l2rowList.get(col).getStringCellValue() )
 						if( l1rowList.get(col).getStringCellValue() == l2rowList.get(col).getStringCellValue() ){
 							System.out.println("Content matches for col: " + col )
 						}
@@ -410,23 +422,27 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 		}
 	}
 
-	@Keyword
+
+
+		@Keyword
 	public static void compareLists() {
 		List<List<XSSFCell>> UIData = new ArrayList<>()
 		List<List<XSSFCell>> neo4jData = new ArrayList<>()
 		String UIfilename =  GlobalVariable.G_WebExcel.toString()   //UIfilepath.toString()
 		System.out.println("This is the full uifilepath after converting to string :"+UIfilename);
-		UIData = ReadExcel.Test(UIfilename)  //change the function name Test in parent class and here
+		UIData = ReadExcel.readExceltoWeblist(UIfilename)  //change the function name Test in parent class and here
+		System.out.println("This is the data read after going through Test function : "+UIData)
 		System.out.println ("This is the row size of the UIdata : "+ UIData.size());
 		Collections.sort( UIData , new RunTestcase() )
 
-		neo4jData =   ReadExcel.Test(GlobalVariable.G_ResultPath.toString())   //ReadExcel.Test(neo4jFilename)
-		System.out.println ("This is the row size of the ne04jdata : "+neo4jData.size());   //gayathri changed to GlobalVariable.G_DBdata.size()  from neo4jData.size()
+		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
+		System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename);
+		neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename)  //change the function name Test in parent class and here
+		System.out.println ("This is the row size of the Neo4jdata : "+ neo4jData.size());
 		Collections.sort( neo4jData , new RunTestcase() )
 
 		compareTwoLists(UIData,neo4jData)
 	}
-
 
 
 
