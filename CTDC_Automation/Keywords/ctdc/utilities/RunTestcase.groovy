@@ -24,6 +24,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.util.KeywordUtil
 
 import internal.GlobalVariable
 
@@ -42,16 +43,33 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 
 		Thread.sleep(2000)
 		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", InputExcelname); // give the Input Excel Name in manual mode in TC
-		System.out.println("This is the full filepath after converting to string :"+filepath.toString());
+		if ( filepath !=null) {
+			KeywordUtil.markPassed("Test case file loaded " + "This is the full filepath after converting to string :"+filepath.toString())
+		}
+		else{
+			KeywordUtil.markError("Test case excel file is not found")
+		}
+
+		//System.out.println("This is the full filepath after converting to string :"+filepath.toString());
 		Path file_pwd = Paths.get(System.getProperty("user.dir"), "TestData", pwd_file); // give the Input Excel Name in manual mode in TC
+
+		if ( file_pwd !=null) {
+			KeywordUtil.markPassed("Test case file loaded " + "This is the full filepath after converting to string :"+file_pwd.toString())
+
+		}
+		else{
+			KeywordUtil.markPassed ("Password File is not found" )
+		}
 		GlobalVariable.G_pwd_file=file_pwd.toString()
+		KeywordUtil.logInfo("Global variable set in  G_pwd_file:  " + GlobalVariable.G_pwd_file )
+
 		GlobalVariable.G_InputExcelFileName=filepath.toString()
+		KeywordUtil.logInfo ("Global variable  in  G_InputExcelFileName:  " + GlobalVariable.G_InputExcelFileName )
 
 		List<List<XSSFCell>> sheetData = new ArrayList<>();
 		FileInputStream fis = new FileInputStream(filepath.toString());
 		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
 		int numberOfSheets = workbook.getNumberOfSheets();  	// Get the  sheets on the workbook
-
 		int countrow = 0
 		int countcol= 0
 
@@ -73,6 +91,9 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 			}
 			sheetData.add(data);
 		}
+
+		KeywordUtil.markPassed("Test Case sheet data loaded for test case to run. " )
+
 		excelparsing(sheetData,driver);
 	}
 
@@ -80,8 +101,9 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 	private static void excelparsing(List<List<XSSFCell>> sheetData, WebDriver Dr2) {//this is initializing second sheet - test case
 		int countrow = 0   // Iterates the data and print it out to the console.
 		countrow = sheetData.size();
-		System.out.println ( " sheetdata size countrow " + countrow )   //delete
-		System.out.println ( "sheet  data size :" + sheetData.get(0).size())  //delete
+		KeywordUtil.logInfo("Excel is being parsed for indivisual rows")
+		KeywordUtil.logInfo( " sheetdata size countrow " + countrow )
+		KeywordUtil.logInfo( "sheet  data size :" + sheetData.get(0).size() )
 
 		for (int ii = 1; ii < countrow; ii++){
 			List<XSSFCell> datarow = sheetData.get(ii);
@@ -95,16 +117,21 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 
 					case("propertyName"):
 						GlobalVariable.G_propertyName = sheetData.get(ii).get(jj).getStringCellValue()
+						KeywordUtil.logInfo( " Property name set in  G_propertyName : " + GlobalVariable.G_propertyName )
 						break;
 					case("propertyvalue"):
 						GlobalVariable.G_propertyvalue = sheetData.get(ii).get(jj).getStringCellValue()
-						System.out.println ( " THE propertyvalue BEING saved :  "  +  GlobalVariable.G_propertyvalue )
+						KeywordUtil.logInfo( " Property name set in  G_propertyvalue :  " + GlobalVariable.G_propertyvalue )
 						break;
 					case("locateby"):
 						GlobalVariable.G_locateby = sheetData.get(ii).get(jj).getStringCellValue()
+						KeywordUtil.logInfo( " Property name set in  G_locateby :  " + GlobalVariable.G_locateby )
+						
 						break;
 					case("locatorvalue"):
 						GlobalVariable.G_locatorvalue = sheetData.get(ii).get(jj).getStringCellValue()
+						KeywordUtil.logInfo( " Property name set in  G_locatorvalue :  " + GlobalVariable.G_locatorvalue )
+						
 						break;
 					case("action"):
 						GlobalVariable.G_Action = sheetData.get(ii).get(jj).getStringCellValue()
