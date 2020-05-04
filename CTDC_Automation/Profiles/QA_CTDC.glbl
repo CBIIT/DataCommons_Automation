@@ -144,4 +144,14 @@
       <initValue>''</initValue>
       <name>G_rowcount</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>This contains the name of the element as stored in Katalon's obj rep</description>
+      <initValue>''</initValue>
+      <name>G_ObjectType</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>This is for Katalon </description>
+      <initValue>''</initValue>
+      <name>G_dbexcel</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

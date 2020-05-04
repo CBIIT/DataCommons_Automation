@@ -23,7 +23,7 @@ import com.kms.katalon.core.annotation.Keyword
 import internal.GlobalVariable
 public class ReadExcel {
 
-	
+
 	@Keyword
 	public static List<List<XSSFCell>> Test(String filename) {
 		//added String filename
@@ -137,7 +137,7 @@ public class ReadExcel {
 		String neo4jServer = GlobalVariable.G_server
 
 		ConnectDB Test1 = new ConnectDB()
-		Test1.run(neo4jServer,userName,pwd, query,output)
+		Test1.run(neo4jServer,userName,pwd,query,output)
 	}
 
 

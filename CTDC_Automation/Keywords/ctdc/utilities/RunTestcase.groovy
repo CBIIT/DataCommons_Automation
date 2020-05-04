@@ -2,6 +2,9 @@ package ctdc.utilities
 
 
 import java.nio.file.Path;
+
+
+
 import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
 
@@ -293,7 +296,7 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 
 			for(int i = 1; i <= rows_count; i++) { //rows_count
 				String data = ""
-				int tblcol=Integer.parseInt(GlobalVariable.G_rowcount);
+				int tblcol=Integer.parseInt(GlobalVariable.G_rowcount_Katalon);
 
 				for (int j = 3; j < columns_count+tblcol; j = j + 2) {
 
