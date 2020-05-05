@@ -33,7 +33,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('Password_canineKatalon.xlsx')
 
-WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases'))
+WebUI.click(findTestObject('Canine/Canine_Cases_Btn'))
 
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 

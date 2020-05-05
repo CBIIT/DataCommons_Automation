@@ -109,21 +109,21 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				//--------------------
 				switch(sheetData.get(0).get(j).getStringCellValue().trim() ) //First ROW
 				{
-					case("Browser"): //browser switch case is a separate function. refer and correct this chunk
-
-						GlobalVariable.G_Browser = sheetData.get(i).get(j).getStringCellValue()
-						driver=browserDriver (GlobalVariable.G_Browser)
-						break;
-					case("server"):
-						GlobalVariable.G_server = sheetData.get(i).get(j).getStringCellValue()
-						break;
-					case("user_Id"):
-						GlobalVariable.G_UserId = sheetData.get(i).get(j).getStringCellValue()
-
-						break;
-					case("Password"):
-						GlobalVariable.G_Password = sheetData.get(i).get(j).getStringCellValue()
-						break;
+//					case("Browser"): //browser switch case is a separate function. refer and correct this chunk
+//
+//						GlobalVariable.G_Browser = sheetData.get(i).get(j).getStringCellValue()
+//						driver=browserDriver (GlobalVariable.G_Browser)
+//						break;
+					//					case("server"):
+					//						GlobalVariable.G_server = sheetData.get(i).get(j).getStringCellValue()
+					//						break;
+					//					case("user_Id"):
+					//						GlobalVariable.G_UserId = sheetData.get(i).get(j).getStringCellValue()
+					//
+					//						break;
+					//					case("Password"):
+					//						GlobalVariable.G_Password = sheetData.get(i).get(j).getStringCellValue()
+					//						break;
 					case("dbExcel"):
 						GlobalVariable.G_dbexcel = sheetData.get(i).get(j).getStringCellValue()
 						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "TestData", GlobalVariable.G_dbexcel)

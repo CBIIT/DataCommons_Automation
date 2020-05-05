@@ -31,18 +31,18 @@ WebUI.openBrowser('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('Password_canineKatalon.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC1_Canine_Filter_Study-COTB.xlsx')
 
-WebUI.click(findTestObject('Canine/Canine_Cases'))
+WebUI.click(findTestObject('Canine/Canine_Cases_Btn'))
 
-CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
+WebUI.click(findTestObject('Canine/Canine_Filter_Breed'))
 
-WebUI.click(findTestObject('Canine/Canine_Breed'))
-
-WebUI.click(findTestObject('Canine/American_Staffordshire'))
+WebUI.click(findTestObject('Canine/Canine_Filter_Breed-AmerStafford_Chkbx'))
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
     'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_NextBtn')
+
+CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()
 
