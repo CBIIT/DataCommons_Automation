@@ -27,35 +27,16 @@ import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 
-//**********************Description************************************
-/*
- * This test case opens the canine commons page, then clicks on the Cases button and then
- *  clicks next button in the results to view all the pages & captures its data in an XSSF arraylist and then 
- *  writes the entire results into an excel"
- * test
- */
-//Path filepath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe"); // give the Input Excel Name in manual mode in TC
-//System.setProperty('webdriver.chrome.driver', filepath.toString())
-//WebDriver driver = new ChromeDriver()
-//using Se webdriver 
-/*
-driver.get("https://caninecommons-qa.cancer.gov/#/")
-Thread.sleep(3000)
-driver.findElement(By.xpath("//a[contains(@href,'cases')]")).click() */
-//using katalon's driver
-WebUI.openBrowser('https://caninecommons-qa.cancer.gov/#/')
+WebUI.openBrowser('')
 
-Thread.sleep(3000)
-
-WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases') //clicks the Cases button
-    )
-
-Thread.sleep(3000)
-
-//WebUI.openBrowser(GlobalVariable.G_Urlname)
-//Thread.sleep(5000)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('Password_canineKatalon.xlsx')
+
+WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases'))
+
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
+    'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_NextBtn')
 
