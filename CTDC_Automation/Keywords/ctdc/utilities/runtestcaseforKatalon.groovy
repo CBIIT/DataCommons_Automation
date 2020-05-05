@@ -38,7 +38,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	@Keyword
 	public  void RunKatalon(String pwd_file) {
 
-		Thread.sleep(2000)
+		//Thread.sleep(2000)
 		Path file_pwd = Paths.get(System.getProperty("user.dir"), "TestData", pwd_file);
 		if ( file_pwd !=null) {
 			KeywordUtil.markPassed("Test case file loaded " + "This is the full filepath after converting to string :"+file_pwd.toString())
@@ -139,7 +139,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						break;
 					case("query"):
 						GlobalVariable.G_Query = sheetData.get(i).get(j).getStringCellValue()
-                        
+
 						break;
 					case("WebExcel"):
 						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
@@ -275,7 +275,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("This is the size of the rows in the table in the current page:"+(rows_count))
 			for(int i = 1; i <= rows_count; i++) { //rows_count
 				String data = ""
-				int tblcol=Integer.parseInt(GlobalVariable.G_rowcount_Katalon); //12
+				int tblcol=GlobalVariable.G_rowcount_Katalon; //12
 				for (int j = 3; j < columns_count+tblcol; j = j + 2) {
 					data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 				}
@@ -291,7 +291,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		GlobalVariable.G_CaseData= webData;
 		System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CaseData)
 		//KeywordUtil.markFailed("failed")
-		//writeToExcel();
+		writeToExcel();
 	}
 	//*********************************************************************************
 	//function to write webData to excel -- this writes the web results to excel
@@ -462,8 +462,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	@Keyword
 	public static WebDriver browserDriver(String browserName){
 		//WebUI.openBrowser('')
-		WebDriver dr
-		dr = DriverFactory.getWebDriver()
+		//WebDriver dr
+		driver = DriverFactory.getWebDriver()
 	}
 
 

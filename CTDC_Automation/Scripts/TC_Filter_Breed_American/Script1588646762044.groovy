@@ -33,10 +33,16 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('Password_canineKatalon.xlsx')
 
-WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases'))
+WebUI.click(findTestObject('Canine/Canine_Cases'))
 
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
+WebUI.click(findTestObject('Canine/Canine_Breed'))
+
+WebUI.click(findTestObject('Canine/American_Staffordshire'))
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
     'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_NextBtn')
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()
 

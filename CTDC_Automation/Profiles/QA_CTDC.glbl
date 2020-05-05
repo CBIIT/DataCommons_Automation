@@ -154,4 +154,9 @@
       <initValue>''</initValue>
       <name>G_dbexcel</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>12</initValue>
+      <name>G_rowcount_Katalon</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
