@@ -28,4 +28,28 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC03_Canine_Filter_Study-ALL</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>35b0bcd0-8404-470c-9fe5-d5d86672a982</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Filter_canine_END_TO_END_Sanbox</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>29fb7c24-614f-4bff-ba20-73278afd9f77</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cdf664c7-0c90-4788-b07f-13baa1d0b4a6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Filter_canine_END_TO_END_Sanbox</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2d3f5b10-26ef-47d2-bd84-9318a13e4b37</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

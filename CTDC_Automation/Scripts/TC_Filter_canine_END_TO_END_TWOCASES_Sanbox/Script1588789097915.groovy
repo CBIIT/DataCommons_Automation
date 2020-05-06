@@ -41,5 +41,3 @@ WebUI.click(findTestObject('Canine/Canine_GoToFiles'))
 
 WebUI.click(findTestObject('Canine/Canine_SelectAll'))
 
-WebUI.click(findTestObject('Canine/Canine_DownloadManifest'))
-
