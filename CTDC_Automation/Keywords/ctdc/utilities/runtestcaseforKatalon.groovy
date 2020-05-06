@@ -41,7 +41,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		//Thread.sleep(2000)
 		Path file_input = Paths.get(System.getProperty("user.dir"), "InputFiles", input_file);
 		if ( file_input !=null) {
-			KeywordUtil.markPassed("Test case file loaded " + "This is the full filepath after converting to string :"+file_pwd.toString())
+			KeywordUtil.markPassed("Test case file loaded " + "This is the full filepath after converting to string :"+file_input.toString())
 		}
 		else{
 			KeywordUtil.markPassed ("Password File is not found" )
