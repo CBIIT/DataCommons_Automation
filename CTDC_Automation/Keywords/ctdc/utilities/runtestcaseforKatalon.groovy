@@ -36,21 +36,21 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	public static WebDriver driver
 
 	@Keyword
-	public  void RunKatalon(String pwd_file) {
+	public  void RunKatalon(String input_file) {
 
 		//Thread.sleep(2000)
-		Path file_pwd = Paths.get(System.getProperty("user.dir"), "TestData", pwd_file);
-		if ( file_pwd !=null) {
+		Path file_input = Paths.get(System.getProperty("user.dir"), "InputFiles", input_file);
+		if ( file_input !=null) {
 			KeywordUtil.markPassed("Test case file loaded " + "This is the full filepath after converting to string :"+file_pwd.toString())
 		}
 		else{
 			KeywordUtil.markPassed ("Password File is not found" )
 		}
-		GlobalVariable.G_pwd_file=file_pwd.toString()
-		KeywordUtil.logInfo("Global variable set for password file is :  " + GlobalVariable.G_pwd_file )
+		GlobalVariable.G_input_file=file_input.toString()
+		KeywordUtil.logInfo("Global variable set for password file is :  " + GlobalVariable.G_input_file )
 
 		List<List<XSSFCell>> sheetData_K = new ArrayList<>();
-		FileInputStream fis = new FileInputStream(GlobalVariable.G_pwd_file);
+		FileInputStream fis = new FileInputStream(GlobalVariable.G_input_file);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
 		int numberOfSheets = workbook.getNumberOfSheets();  	// Get the  sheets on the workbook
 		int countrow = 0
@@ -109,24 +109,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				//--------------------
 				switch(sheetData.get(0).get(j).getStringCellValue().trim() ) //First ROW
 				{
-//					case("Browser"): //browser switch case is a separate function. refer and correct this chunk
-//
-//						GlobalVariable.G_Browser = sheetData.get(i).get(j).getStringCellValue()
-//						driver=browserDriver (GlobalVariable.G_Browser)
-//						break;
-					//					case("server"):
-					//						GlobalVariable.G_server = sheetData.get(i).get(j).getStringCellValue()
-					//						break;
-					//					case("user_Id"):
-					//						GlobalVariable.G_UserId = sheetData.get(i).get(j).getStringCellValue()
-					//
-					//						break;
-					//					case("Password"):
-					//						GlobalVariable.G_Password = sheetData.get(i).get(j).getStringCellValue()
-					//						break;
 					case("dbExcel"):
 						GlobalVariable.G_dbexcel = sheetData.get(i).get(j).getStringCellValue()
-						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "TestData", GlobalVariable.G_dbexcel)
+						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
 						GlobalVariable.G_ResultPath=dbfilepath.toString()
 						break;
 					case("Environment"):
@@ -143,7 +128,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						break;
 					case("WebExcel"):
 						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
-						Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", GlobalVariable.G_WebExcel)
+						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_WebExcel)
 						GlobalVariable.G_WebExcel=filepath.toString()
 
 						break;
@@ -161,83 +146,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	}
 
 
-
-
-
-
-
-
-	/*
-	 * 
-	 * 
-	 * 
-	 * // need action  & query   == take query from pwd excel ? or from tc
-	 *
-	 case("Function"):
-	 System.out.println ( "  the value to be uses in the function call  : " + sheetData.get(ii).get(jj).getStringCellValue().trim() )
-	 switch(sheetData.get(ii).get(jj).getStringCellValue().trim() )
-	 {
-	 case("InitialLoad"):
-	 ReadExcel.initialLoad()
-	 driver=browserDriver (GlobalVariable.G_Browser)
-	 if( GlobalVariable.G_Page=="na"){
-	 }
-	 else {
-	 driver.get(GlobalVariable.G_Page)
-	 }
-	 break;
-	 case ("Dbconnect"):
-	 System.out.println  (" In dataload")
-	 ReadExcel.Neo4j()
-	 break;
-	 case ("action_click"):
-	 driver.manage().window().maximize()
-	 driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-	 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	 WebDriverWait wait = new WebDriverWait(driver, 30);
-	 WebElement ElementFromExcel
-	 ElementFromExcel = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(GlobalVariable.G_locatorvalue)))
-	 ElementFromExcel.click()
-	 Thread.sleep(3000)
-	 System.out.println( " clicked on :" + GlobalVariable.G_locatorvalue )
-	 break;
-	 case("Select_case_checkbox"):
-	 String one_all = sheetData.get(ii).get(2).getStringCellValue().trim()
-	 String Casenum= sheetData.get(ii).get(3).getStringCellValue().trim()
-	 Select_case_checkbox(driver,Casenum,one_all )
-	 break;
-	 case("webdata"):
-	 List<String> WData = new ArrayList<String>();
-	 WData=ReadCasesTable(driver)
-	 break;
-	 case("compare"):
-	 compareLists();
-	 break;
-	 case("StoreGlobal"):
-	 GlobalVariable.(sheetData.get(ii).get(3).getStringCellValue())=sheetData.get(ii).get(6).getStringCellValue()
-	 break;
-	 case("verify"):
-	 verify_text(driver,"American Staffordshire Terrier" , GlobalVariable.G_locatorvalue  )
-	 break ;
-	 default:
-	 System.out.println ("nothing in function column :")
-	 break;
-	 }
-	 break;
-	 case("Run"):   // create a code to use this Run Flag value to decide processing that rows data
-	 GlobalVariable.G_Run = sheetData.get(ii).get(jj).getStringCellValue()
-	 break;
-	 case("Otherimportuser"):
-	 break;
-	 default :
-	 System.out.println ( " here at the last ")
-	 break;
-	 }
-	 }
-	 }
-	 //gayathri added these lines
-	 }
-	 */
 	//----------------web data --------------
 	@Keyword
 	public void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {

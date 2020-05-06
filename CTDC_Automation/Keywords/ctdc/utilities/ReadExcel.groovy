@@ -148,7 +148,7 @@ public class ReadExcel {
 
 
 		List<List<XSSFCell>> sheetData = new ArrayList<>();  // Create an ArrayList to store the data read from excel sheet
-		FileInputStream fis = new FileInputStream(GlobalVariable.G_pwd_file);  //give GlobalVariable.G_InputExcelFileName
+		FileInputStream fis = new FileInputStream(GlobalVariable.G_input_file);  //give GlobalVariable.G_InputExcelFileName
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		int numberOfSheets = workbook.getNumberOfSheets(); 	// Get the  sheets on the workbook.
 		System.out.println("Total number of sheets in the excel: "+numberOfSheets)
