@@ -132,10 +132,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						GlobalVariable.G_WebExcel=filepath.toString()
 
 						break;
-					/*added*/	
-					case("tblbody"):
-						GlobalVariable.G_cannine_caseTblBdy =sheetData.get(i).get(j).getStringCellValue()
-						break;
 					default :
 						System.out.println("Error in initializing")
 						break;
@@ -151,7 +147,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	public void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
 
 		List<String> webData = new ArrayList<String>();
-		String tbl_bdy=	GlobalVariable.G_cannine_caseTblBdy
+		String tbl_main= givexpath(tbl1)
+		String tbl_bdy=	tbl_main+"/tbody"
+		GlobalVariable.G_cannine_caseTblBdy=tbl_bdy
+
 		String tbl_str= givexpath(tbl1)							//"//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//following-sibling::tbody"
 		WebElement Table =driver.findElement(By.xpath(tbl_str))
 
@@ -374,7 +373,31 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		driver = DriverFactory.getWebDriver()
 	}
 
+	@Keyword
+	public static Select_case_checkbox( String caseID,String count){
 
+		System.out.println(" In the function dumbo " + count + "caseid : "  + caseID )
+
+		switch(count){
+			case("one"):
+			//System.out.println("in case 1")
+
+				String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
+			//System.out.println(" In the function dumbo1 "  + one_path )
+
+
+				driver.findElement(By.xpath(one_path)).click()  //driver.findElement(By.xpath('//a[contains( text(),caseID)]//parent::div//parent::td//preceding-sibling::td'))
+				break;
+			case ("all"):
+				String str ="//div[text()=\'Case ID\']//parent::span//parent::th//preceding-sibling::th"
+			//System.out.println(" In the function dumbo ALL")
+				driver.findElement(By.xpath(str)).click()
+
+
+				break;
+
+		}
+	}
 
 
 }  //class ends here
