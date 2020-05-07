@@ -14,19 +14,19 @@
       <guid>426999de-2932-4e9f-9fcb-9db3d37928b8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC01_Canine_Filter_Study-COTB</testCaseId>
+      <testCaseId>Test Cases/Study_StudyType_Breed/TC01_Canine_Filter_Study-COTB</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>3753f5da-6c5f-4229-bd56-de497fb7e92f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC02_Canine_Filter_Study-NCATS</testCaseId>
+      <testCaseId>Test Cases/Study_StudyType_Breed/TC02_Canine_Filter_Study-NCATS</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c6f035aa-0e4e-4f58-aa00-629ba873e94e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC03_Canine_Filter_Study-ALL</testCaseId>
+      <testCaseId>Test Cases/Study_StudyType_Breed/TC03_Canine_Filter_Study-ALL</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>35b0bcd0-8404-470c-9fe5-d5d86672a982</guid>
