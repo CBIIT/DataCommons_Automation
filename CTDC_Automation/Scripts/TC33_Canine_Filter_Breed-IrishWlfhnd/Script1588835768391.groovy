@@ -31,14 +31,13 @@ WebUI.openBrowser('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC09_Canine_Filter_Breed-AusShephd.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC33_Canine_Filter_Breed-IrishWlfhnd.xlsx')
 
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
-
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn') )
 
-WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/AusShephd_Chkbx') )
+WebUI.click( findTestObject('Object Repository/Canine/Filter/Breed/IrishWolfhnd_Chkbx') )
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
     'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_NextBtn')
