@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC05_Canine_Filter_StudyType-Transcriptomics</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>97a18188-98df-4958-9704-fb2172b12d99</testCaseGuid>
-</TestCaseEntity>

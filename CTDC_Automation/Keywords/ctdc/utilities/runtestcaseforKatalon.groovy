@@ -75,7 +75,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			sheetData_K.add(data);
 		}
 
-		KeywordUtil.markPassed("Test Case sheet data loaded for test case to run. " )
+		KeywordUtil.markPassed("Data loaded from input file for the test case. " )
 		excelparsingKatalon(sheetData_K,driver);
 		System.out.println("Excelparsing worked successfully")
 		//		List<String> WData = new ArrayList<String>();
@@ -90,7 +90,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	private static void excelparsingKatalon(List<List<XSSFCell>> sheetData, WebDriver dr) {  //this is DB initializing
 		// Iterates the data and print it out to the console.
-
+		System.out.println("this is urlname :"+GlobalVariable.G_Urlname)
+		driver.get(GlobalVariable.G_Urlname)
+		
 		int countrow = 0
 		countrow = sheetData.size();
 		System.out.println ( "row count from initializing fnc " + countrow ) //delete
@@ -114,14 +116,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
 						GlobalVariable.G_ResultPath=dbfilepath.toString()
 						break;
-					case("Environment"):
-						GlobalVariable.G_Environment = sheetData.get(i).get(j).getStringCellValue()
-						break;
-					case("Url"):
-						GlobalVariable.G_Urlname = sheetData.get(i).get(j).getStringCellValue()
-						System.out.println("this is urlname :"+GlobalVariable.G_Urlname)
-						driver.get(GlobalVariable.G_Urlname)
-						break;
+					//					case("Url"):
+					//						GlobalVariable.G_Urlname = sheetData.get(i).get(j).getStringCellValue()
+					//						System.out.println("this is urlname :"+GlobalVariable.G_Urlname)
+					//						driver.get(GlobalVariable.G_Urlname)
+					//						break;
 					case("query"):
 						GlobalVariable.G_Query = sheetData.get(i).get(j).getStringCellValue()
 
@@ -130,7 +129,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
 						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_WebExcel)
 						GlobalVariable.G_WebExcel=filepath.toString()
-
 						break;
 					default :
 						System.out.println("Error in initializing")
@@ -305,73 +303,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 
-	//	@Keyword
-	//	public static WebDriver browserDriver(String browserName) {
-	//
-	//
-	//
-	//		WebDriver dr
-	//		switch(browserName)
-	//		{
-	//			case("Chrome"):
-	//				driver = new ChromeDriver()
-	//				Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
-	//				System.setProperty('webdriver.chrome.driver', driverPath.toString())
-	//				System.out.println ( "  new driver done !!")
-	//				dr=driver
-	//				break;
-	//
-	//			case("Firefox"):
-	//				Path driverPath = Paths.get(System.getProperty("user.dir"), "geckodriver.exe");
-	//				System.setProperty('webdriver.gecko.driver', driverPath.toString())
-	//				driver = new FirefoxDriver()  //resolve this issue
-	//				dr=driver
-	//			//	browserDriver=dvr
-	//				break;
-	//
-	//			case("FirefoxHeadless"):
-	//
-	//
-	//				FirefoxBinary firefoxBinary = new FirefoxBinary();
-	//				firefoxBinary.addCommandLineOptions("--headless");
-	//				Path driverPath = Paths.get(System.getProperty("user.dir"), "geckodriver.exe");
-	//				System.setProperty('webdriver.gecko.driver', driverPath.toString())
-	//
-	//				FirefoxOptions firefoxOptions = new FirefoxOptions();
-	//				firefoxOptions.setBinary(firefoxBinary);
-	//
-	//				driver = new FirefoxDriver(firefoxOptions)
-	//
-	//				dr=driver
-	//			//	browserDriver=dvr
-	//				break;
-	//
-	//			case ("ChromeHeadless") :
-	//				System.out.println (" CHrome Head less  yahooo!!!")
-	//				ChromeOptions options = new ChromeOptions();
-	//			//options.addArguments("headless");
-	//				options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
-	//				driver = new ChromeDriver(options)
-	//				Path driverPath = Paths.get(System.getProperty("user.dir"), "chromedriver.exe");
-	//				System.setProperty('webdriver.chrome.driver', driverPath.toString())
-	//				System.out.println ( "  new driver done !!")
-	//				Thread.sleep(3000)
-	//				dr=driver
-	//				break;
-	//
-	//			default:
-	//				System.out.println ("Nothing in Browser column")
-	//				dr=driver
-	//				break;
-	//		}
-	//	}
-
 	@Keyword
 	public static WebDriver browserDriver(String browserName){
 		//WebUI.openBrowser('')
 		//WebDriver dr
 		driver = DriverFactory.getWebDriver()
-	}
+		}
 
 	@Keyword
 	public static Select_case_checkbox( String caseID,String count){

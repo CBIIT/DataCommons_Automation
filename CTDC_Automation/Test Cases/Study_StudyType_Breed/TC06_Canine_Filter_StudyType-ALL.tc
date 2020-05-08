@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC06_Canine_Filter_StudyType-ALL</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>2fa58e9f-7404-4f44-a8d3-01193872f5fb</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_Canine_Filter_Study-NCATS</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>abbf1c61-a9c1-424f-ba00-d0de613d192c</testCaseGuid>
-</TestCaseEntity>
