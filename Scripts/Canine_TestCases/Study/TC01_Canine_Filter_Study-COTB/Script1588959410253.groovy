@@ -27,6 +27,8 @@ import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.driveropen'()
+
 'Opens the browser of choice: Chrome, Firefox or Edge'
 WebUI.openBrowser('')
 
