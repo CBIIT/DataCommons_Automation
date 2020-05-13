@@ -21,7 +21,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('Password_canine.xlsx')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_CasesTable'), 5)
@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Fil
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('NCATS-COP01CCB010072', 'one')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_SaveToMycases'), 5)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_SaveToMycases'), 5)
 WebUI.click(findTestObject('Object Repository/Canine/Canine_SaveToMycases'))
 
 WebUI.click(findTestObject('Object Repository/Canine/Canine_MyCases'))
