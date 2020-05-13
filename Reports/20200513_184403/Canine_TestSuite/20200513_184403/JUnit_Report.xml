@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Canine_TestSuite" time="155.97" tests="5" failures="1" errors="0">
+   <testsuite name="Canine_TestSuite" tests="5" failures="1" errors="0" time="155.97" timestamp="2020-05-13 18:44:05" hostname="lollal - NCI-02158064-L.nci.nih.gov" id="Test Suites/Canine_TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Small_SetDebug\\DataCommons_Automation\\Reports\\20200513_184403\\Canine_TestSuite\\20200513_184403"/>
+         <property name="logFiles" value="C:\\Small_SetDebug\\DataCommons_Automation\\Reports\\20200513_184403\\Canine_TestSuite\\20200513_184403\\execution0.log"/>
+         <property name="attachments" value="C:\\Small_SetDebug\\DataCommons_Automation\\Reports\\20200513_184403\\Canine_TestSuite\\20200513_184403\\1589409950411.png"/>
+         <property name="hostName" value="lollal - NCI-02158064-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.3.0.1"/>
+         <property name="browser" value="Firefox 68.0"/>
+         <property name="hostAddress" value="10.243.18.254"/>
+         <property name="sessionId" value="c343ca94-c0cd-4245-9a54-d71ffc82a353"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd" time="28.971" classname="Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd" status="PASSED">
+         <system-out><![CDATA[2020-05-13 18:44:05 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd: Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd
+
+2020-05-13 18:44:06 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.driveropen(): ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED
+
+2020-05-13 18:44:06 - [MESSAGE][INFO] - Browser is NOT Existing
+
+2020-05-13 18:44:06 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED
+
+2020-05-13 18:44:06 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-13 18:44:06 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-13 18:44:07 - [MESSAGE][INFO] - Action delay is set to 3,000 milliseconds
+
+2020-05-13 18:44:11 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-13 18:44:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-13 18:44:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-13 18:44:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_Filter_Breed-AmerStaffd.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-13 18:44:11 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Small_SetDebug\DataCommons_Automation\InputFiles\TC02_Canine_Filter_Breed-AmerStaffd.xlsx
+
+2020-05-13 18:44:11 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Small_SetDebug\DataCommons_Automation\InputFiles\TC02_Canine_Filter_Breed-AmerStaffd.xlsx
+
+2020-05-13 18:44:12 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-13 18:44:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-13 18:44:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-13 18:44:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-13 18:44:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-13 18:44:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/AmerStaffd_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/AmerStaffd_Chkbx' is clicked on
+
+2020-05-13 18:44:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/AmerStaffd_Chkbx' is clicked on
+
+2020-05-13 18:44:29 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-13 18:44:30 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-13 18:44:30 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-13 18:44:34 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-13 18:44:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-13 18:44:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle" time="25.683" classname="Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle" status="PASSED">
+         <system-out><![CDATA[2020-05-13 18:44:34 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle: Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle
+
+2020-05-13 18:44:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.driveropen(): ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED
+
+2020-05-13 18:44:35 - [MESSAGE][INFO] -  Browser was open so quitting
+
+2020-05-13 18:44:36 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED
+
+2020-05-13 18:44:36 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-13 18:44:36 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-13 18:44:36 - [MESSAGE][INFO] - Action delay is set to 3,000 milliseconds
+
+2020-05-13 18:44:40 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-13 18:44:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-13 18:44:40 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-13 18:44:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC05_Canine_Filter_Breed-Beagle.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-13 18:44:40 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Small_SetDebug\DataCommons_Automation\InputFiles\TC05_Canine_Filter_Breed-Beagle.xlsx
+
+2020-05-13 18:44:40 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Small_SetDebug\DataCommons_Automation\InputFiles\TC05_Canine_Filter_Breed-Beagle.xlsx
+
+2020-05-13 18:44:40 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-13 18:44:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-13 18:44:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-13 18:44:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-13 18:44:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-13 18:44:52 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Beagle_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Beagle_Chkbx' is clicked on
+
+2020-05-13 18:44:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Beagle_Chkbx' is clicked on
+
+2020-05-13 18:44:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-13 18:44:57 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-13 18:44:57 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-13 18:45:00 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-13 18:45:00 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-13 18:45:00 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier" time="49.893" classname="Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at TC10_Canine_Filter_Breed-Bouvier.run(TC10_Canine_Filter_Breed-Bouvier:56)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589409843917.run(TempTestSuite1589409843917.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx' located by 'By.xpath: //span[contains(text(),'Bouvier des Flandres')]//parent::div//parent::divadded12345' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1154)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2020-05-13 18:45:00 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier: Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at TC10_Canine_Filter_Breed-Bouvier.run(TC10_Canine_Filter_Breed-Bouvier:56)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589409843917.run(TempTestSuite1589409843917.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx' located by 'By.xpath: //span[contains(text(),'Bouvier des Flandres')]//parent::div//parent::divadded12345' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1154)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2020-05-13 18:45:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.driveropen(): ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED
+
+2020-05-13 18:45:01 - [MESSAGE][INFO] -  Browser was open so quitting
+
+2020-05-13 18:45:02 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED
+
+2020-05-13 18:45:02 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-13 18:45:02 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-13 18:45:02 - [MESSAGE][INFO] - Action delay is set to 3,000 milliseconds
+
+2020-05-13 18:45:05 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-13 18:45:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-13 18:45:05 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-13 18:45:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC10_Canine_Filter_Breed-Bouvier.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-13 18:45:05 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Small_SetDebug\DataCommons_Automation\InputFiles\TC10_Canine_Filter_Breed-Bouvier.xlsx
+
+2020-05-13 18:45:05 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Small_SetDebug\DataCommons_Automation\InputFiles\TC10_Canine_Filter_Breed-Bouvier.xlsx
+
+2020-05-13 18:45:05 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-13 18:45:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-13 18:45:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-13 18:45:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-13 18:45:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-13 18:45:18 - [TEST_STEP][FAILED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Bouvier_Chkbx")): Unable to click on object 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at TC10_Canine_Filter_Breed-Bouvier.run(TC10_Canine_Filter_Breed-Bouvier:56)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589409843917.run(TempTestSuite1589409843917.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx' located by 'By.xpath: //span[contains(text(),'Bouvier des Flandres')]//parent::div//parent::divadded12345' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1154)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at Script1589136608130.run(Script1589136608130.groovy:56)
+	... 13 more
+)
+
+2020-05-13 18:45:50 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //span[contains(text(),'Bouvier des Flandres')]//parent::div//parent::divadded12345'. Please recheck the objects properties to make sure the desired element is located. 
+
+2020-05-13 18:45:50 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at TC10_Canine_Filter_Breed-Bouvier.run(TC10_Canine_Filter_Breed-Bouvier:56)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589409843917.run(TempTestSuite1589409843917.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx' located by 'By.xpath: //span[contains(text(),'Bouvier des Flandres')]//parent::div//parent::divadded12345' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1154)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at Script1589136608130.run(Script1589136608130.groovy:56)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Small_SetDebug\\DataCommons_Automation\\Reports\\20200513_184403\\Canine_TestSuite\\20200513_184403\\1589409950411.png]]]]></system-out>
+         <system-err><![CDATA[2020-05-13 18:45:00 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier: Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at TC10_Canine_Filter_Breed-Bouvier.run(TC10_Canine_Filter_Breed-Bouvier:56)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589409843917.run(TempTestSuite1589409843917.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx' located by 'By.xpath: //span[contains(text(),'Bouvier des Flandres')]//parent::div//parent::divadded12345' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1154)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Breed/TC11_Canine_Filter_Breed-Boxer" time="25.348" classname="Test Cases/Canine_TestCases/Breed/TC11_Canine_Filter_Breed-Boxer" status="PASSED">
+         <system-out><![CDATA[2020-05-13 18:45:50 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Breed/TC11_Canine_Filter_Breed-Boxer: Test Cases/Canine_TestCases/Breed/TC11_Canine_Filter_Breed-Boxer
+
+2020-05-13 18:45:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.driveropen(): ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED
+
+2020-05-13 18:45:50 - [MESSAGE][INFO] -  Browser was open so quitting
+
+2020-05-13 18:45:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED
+
+2020-05-13 18:45:51 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-13 18:45:51 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-13 18:45:51 - [MESSAGE][INFO] - Action delay is set to 3,000 milliseconds
+
+2020-05-13 18:45:54 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-13 18:45:54 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-13 18:45:54 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-13 18:45:54 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC11_Canine_Filter_Breed-Boxer.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-13 18:45:54 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Small_SetDebug\DataCommons_Automation\InputFiles\TC11_Canine_Filter_Breed-Boxer.xlsx
+
+2020-05-13 18:45:54 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Small_SetDebug\DataCommons_Automation\InputFiles\TC11_Canine_Filter_Breed-Boxer.xlsx
+
+2020-05-13 18:45:54 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-13 18:45:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-13 18:46:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-13 18:46:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-13 18:46:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-13 18:46:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Boxer_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Boxer_Chkbx' is clicked on
+
+2020-05-13 18:46:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Boxer_Chkbx' is clicked on
+
+2020-05-13 18:46:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-13 18:46:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-13 18:46:12 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-13 18:46:15 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-13 18:46:15 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-13 18:46:15 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Breed/TC12_Canine_Filter_Breed-BullMastif" time="24.601" classname="Test Cases/Canine_TestCases/Breed/TC12_Canine_Filter_Breed-BullMastif" status="PASSED">
+         <system-out><![CDATA[2020-05-13 18:46:15 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Breed/TC12_Canine_Filter_Breed-BullMastif: Test Cases/Canine_TestCases/Breed/TC12_Canine_Filter_Breed-BullMastif
+
+2020-05-13 18:46:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.driveropen(): ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED
+
+2020-05-13 18:46:16 - [MESSAGE][INFO] -  Browser was open so quitting
+
+2020-05-13 18:46:17 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED
+
+2020-05-13 18:46:17 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-13 18:46:17 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-13 18:46:17 - [MESSAGE][INFO] - Action delay is set to 3,000 milliseconds
+
+2020-05-13 18:46:20 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-13 18:46:20 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-13 18:46:20 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-13 18:46:20 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC12_Canine_Filter_Breed-BullMastif.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-13 18:46:20 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Small_SetDebug\DataCommons_Automation\InputFiles\TC12_Canine_Filter_Breed-BullMastif.xlsx
+
+2020-05-13 18:46:20 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Small_SetDebug\DataCommons_Automation\InputFiles\TC12_Canine_Filter_Breed-BullMastif.xlsx
+
+2020-05-13 18:46:20 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-13 18:46:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-13 18:46:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-13 18:46:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-13 18:46:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-13 18:46:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Bullmastif_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Bullmastif_Chkbx' is clicked on
+
+2020-05-13 18:46:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Bullmastif_Chkbx' is clicked on
+
+2020-05-13 18:46:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-13 18:46:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-13 18:46:37 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-13 18:46:40 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-13 18:46:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-13 18:46:40 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-05-13 18:44:05 - [TEST_SUITE][FAILED] - Canine_TestSuite: Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at TC10_Canine_Filter_Breed-Bouvier.run(TC10_Canine_Filter_Breed-Bouvier:56)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589409843917.run(TempTestSuite1589409843917.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx' located by 'By.xpath: //span[contains(text(),'Bouvier des Flandres')]//parent::div//parent::divadded12345' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1154)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-out>
+      <system-err><![CDATA[2020-05-13 18:44:05 - [TEST_SUITE][FAILED] - Canine_TestSuite: Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at TC10_Canine_Filter_Breed-Bouvier.run(TC10_Canine_Filter_Breed-Bouvier:56)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589409843917.run(TempTestSuite1589409843917.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx' located by 'By.xpath: //span[contains(text(),'Bouvier des Flandres')]//parent::div//parent::divadded12345' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1154)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+   </testsuite>
+</testsuites>

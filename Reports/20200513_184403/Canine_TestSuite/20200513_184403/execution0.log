@@ -1,0 +1,2836 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-05-13T18:44:05</date>
+  <millis>1589409845741</millis>
+  <sequence>0</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startSuite</method>
+  <thread>1</thread>
+  <message>Start Test Suite : Test Suites/Canine_TestSuite</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="name">Canine_TestSuite</property>
+  <property name="description"></property>
+  <property name="id">Test Suites/Canine_TestSuite</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:05</date>
+  <millis>1589409845755</millis>
+  <sequence>1</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostName = lollal - NCI-02158064-L.nci.nih.gov</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostName">lollal - NCI-02158064-L.nci.nih.gov</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:05</date>
+  <millis>1589409845755</millis>
+  <sequence>2</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>os = Windows 10 64bit</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="os">Windows 10 64bit</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:05</date>
+  <millis>1589409845756</millis>
+  <sequence>3</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostAddress = 10.243.18.254</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostAddress">10.243.18.254</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:05</date>
+  <millis>1589409845757</millis>
+  <sequence>4</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>katalonVersion = 7.3.0.1</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="katalonVersion">7.3.0.1</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:05</date>
+  <millis>1589409845983</millis>
+  <sequence>5</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd</property>
+  <property name="source">C:\\Small_SetDebug\\DataCommons_Automation\\Test Cases\\Canine_TestCases\\Breed\\TC02_Canine_Filter_Breed-AmerStaffd.tc</property>
+  <property name="tag">Filter</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:06</date>
+  <millis>1589409846574</millis>
+  <sequence>7</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.driveropen()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">42</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:06</date>
+  <millis>1589409846658</millis>
+  <sequence>8</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is NOT Existing</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:06</date>
+  <millis>1589409846659</millis>
+  <sequence>9</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:06</date>
+  <millis>1589409846660</millis>
+  <sequence>10</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.driveropen()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:06</date>
+  <millis>1589409846660</millis>
+  <sequence>11</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : openBrowser(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">44</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:06</date>
+  <millis>1589409846890</millis>
+  <sequence>13</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Firefox (headless)&amp;apos; driver</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:07</date>
+  <millis>1589409847031</millis>
+  <sequence>15</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Action delay is set to 3,000 milliseconds</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:11</date>
+  <millis>1589409851510</millis>
+  <sequence>17</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = 10f71c79-d98f-461b-8609-896b1501c42a</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="sessionId">10f71c79-d98f-461b-8609-896b1501c42a</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:11</date>
+  <millis>1589409851523</millis>
+  <sequence>18</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Firefox 68.0</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="browser">Firefox 68.0</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:11</date>
+  <millis>1589409851523</millis>
+  <sequence>19</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:11</date>
+  <millis>1589409851523</millis>
+  <sequence>20</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:11</date>
+  <millis>1589409851524</millis>
+  <sequence>21</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:11</date>
+  <millis>1589409851539</millis>
+  <sequence>22</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:11</date>
+  <millis>1589409851539</millis>
+  <sequence>23</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : openBrowser(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:11</date>
+  <millis>1589409851540</millis>
+  <sequence>24</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.browserDriver(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">46</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:11</date>
+  <millis>1589409851542</millis>
+  <sequence>25</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:11</date>
+  <millis>1589409851543</millis>
+  <sequence>26</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.browserDriver(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:11</date>
+  <millis>1589409851543</millis>
+  <sequence>27</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.RunKatalon(\&amp;quot;TC02_Canine_Filter_Breed-AmerStaffd.xlsx\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">48</property>
+  <property name="stepIndex">4</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:11</date>
+  <millis>1589409851565</millis>
+  <sequence>28</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test case file loaded This is the full filepath after converting to string :C:\\Small_SetDebug\\DataCommons_Automation\\InputFiles\\TC02_Canine_Filter_Breed-AmerStaffd.xlsx</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:11</date>
+  <millis>1589409851929</millis>
+  <sequence>29</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Global variable set for password file is :  C:\\Small_SetDebug\\DataCommons_Automation\\InputFiles\\TC02_Canine_Filter_Breed-AmerStaffd.xlsx</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:12</date>
+  <millis>1589409852475</millis>
+  <sequence>30</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Data loaded from input file for the test case. </message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:17</date>
+  <millis>1589409857535</millis>
+  <sequence>31</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.RunKatalon(\&amp;quot;TC02_Canine_Filter_Breed-AmerStaffd.xlsx\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:17</date>
+  <millis>1589409857535</millis>
+  <sequence>32</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Canine_Cases_Btn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">50</property>
+  <property name="stepIndex">5</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:20</date>
+  <millis>1589409860737</millis>
+  <sequence>41</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Canine/Canine_Cases_Btn&amp;apos; is clicked on</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:20</date>
+  <millis>1589409860738</millis>
+  <sequence>42</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Canine_Cases_Btn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:20</date>
+  <millis>1589409860738</millis>
+  <sequence>43</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/BREED_Ddn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">52</property>
+  <property name="stepIndex">6</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:25</date>
+  <millis>1589409865578</millis>
+  <sequence>54</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Canine/Filter/Breed/BREED_Ddn&amp;apos; is clicked on</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:25</date>
+  <millis>1589409865579</millis>
+  <sequence>55</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/BREED_Ddn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:25</date>
+  <millis>1589409865580</millis>
+  <sequence>56</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/AmerStaffd_Chkbx\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">54</property>
+  <property name="stepIndex">7</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:29</date>
+  <millis>1589409869174</millis>
+  <sequence>65</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Canine/Filter/Breed/AmerStaffd_Chkbx&amp;apos; is clicked on</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:29</date>
+  <millis>1589409869176</millis>
+  <sequence>66</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/AmerStaffd_Chkbx\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:29</date>
+  <millis>1589409869177</millis>
+  <sequence>67</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(\&amp;quot;Object Repository/Canine/Canine_CasesTable\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_TableHeader\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_NextBtn\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">56</property>
+  <property name="stepIndex">8</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:30</date>
+  <millis>1589409870653</millis>
+  <sequence>114</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:30</date>
+  <millis>1589409870654</millis>
+  <sequence>115</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(\&amp;quot;Object Repository/Canine/Canine_CasesTable\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_TableHeader\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_NextBtn\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:30</date>
+  <millis>1589409870654</millis>
+  <sequence>116</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.ReadExcel.Neo4j()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">59</property>
+  <property name="stepIndex">9</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:34</date>
+  <millis>1589409874892</millis>
+  <sequence>120</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.ReadExcel.Neo4j is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:34</date>
+  <millis>1589409874893</millis>
+  <sequence>121</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.ReadExcel.Neo4j()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:34</date>
+  <millis>1589409874893</millis>
+  <sequence>122</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.compareLists()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">61</property>
+  <property name="stepIndex">10</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:34</date>
+  <millis>1589409874952</millis>
+  <sequence>123</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:34</date>
+  <millis>1589409874952</millis>
+  <sequence>124</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.compareLists()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:34</date>
+  <millis>1589409874953</millis>
+  <sequence>125</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:34</date>
+  <millis>1589409874954</millis>
+  <sequence>126</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:34</date>
+  <millis>1589409874954</millis>
+  <sequence>127</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>=================== Smart XPath Report =======================</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:34</date>
+  <millis>1589409874955</millis>
+  <sequence>128</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Refer to the link below to preview and approve auto healing on broken test objects.</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:34</date>
+  <millis>1589409874955</millis>
+  <sequence>129</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:34</date>
+  <millis>1589409874955</millis>
+  <sequence>130</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>===============================================================</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:34</date>
+  <millis>1589409874962</millis>
+  <sequence>131</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle</property>
+  <property name="source">C:\\Small_SetDebug\\DataCommons_Automation\\Test Cases\\Canine_TestCases\\Breed\\TC05_Canine_Filter_Breed-Beagle.tc</property>
+  <property name="tag">Filter</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:35</date>
+  <millis>1589409875360</millis>
+  <sequence>133</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.driveropen()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">42</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:35</date>
+  <millis>1589409875365</millis>
+  <sequence>134</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message> Browser was open so quitting</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:36</date>
+  <millis>1589409876738</millis>
+  <sequence>135</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:36</date>
+  <millis>1589409876739</millis>
+  <sequence>136</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.driveropen()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:36</date>
+  <millis>1589409876739</millis>
+  <sequence>137</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : openBrowser(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">44</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:36</date>
+  <millis>1589409876752</millis>
+  <sequence>139</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Firefox (headless)&amp;apos; driver</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:36</date>
+  <millis>1589409876765</millis>
+  <sequence>141</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Action delay is set to 3,000 milliseconds</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:40</date>
+  <millis>1589409880183</millis>
+  <sequence>143</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = e4038ae6-d86f-4fbd-9faf-87d1c6b4e151</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="sessionId">e4038ae6-d86f-4fbd-9faf-87d1c6b4e151</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:40</date>
+  <millis>1589409880192</millis>
+  <sequence>144</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Firefox 68.0</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="browser">Firefox 68.0</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:40</date>
+  <millis>1589409880192</millis>
+  <sequence>145</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:40</date>
+  <millis>1589409880192</millis>
+  <sequence>146</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:40</date>
+  <millis>1589409880193</millis>
+  <sequence>147</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:40</date>
+  <millis>1589409880213</millis>
+  <sequence>148</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:40</date>
+  <millis>1589409880213</millis>
+  <sequence>149</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : openBrowser(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:40</date>
+  <millis>1589409880214</millis>
+  <sequence>150</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.browserDriver(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">46</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:40</date>
+  <millis>1589409880214</millis>
+  <sequence>151</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:40</date>
+  <millis>1589409880214</millis>
+  <sequence>152</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.browserDriver(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:40</date>
+  <millis>1589409880215</millis>
+  <sequence>153</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.RunKatalon(\&amp;quot;TC05_Canine_Filter_Breed-Beagle.xlsx\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">48</property>
+  <property name="stepIndex">4</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:40</date>
+  <millis>1589409880215</millis>
+  <sequence>154</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test case file loaded This is the full filepath after converting to string :C:\\Small_SetDebug\\DataCommons_Automation\\InputFiles\\TC05_Canine_Filter_Breed-Beagle.xlsx</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:40</date>
+  <millis>1589409880216</millis>
+  <sequence>155</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Global variable set for password file is :  C:\\Small_SetDebug\\DataCommons_Automation\\InputFiles\\TC05_Canine_Filter_Breed-Beagle.xlsx</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:40</date>
+  <millis>1589409880238</millis>
+  <sequence>156</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Data loaded from input file for the test case. </message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:44</date>
+  <millis>1589409884744</millis>
+  <sequence>157</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.RunKatalon(\&amp;quot;TC05_Canine_Filter_Breed-Beagle.xlsx\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:44</date>
+  <millis>1589409884744</millis>
+  <sequence>158</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Canine_Cases_Btn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">50</property>
+  <property name="stepIndex">5</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:47</date>
+  <millis>1589409887890</millis>
+  <sequence>167</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Canine/Canine_Cases_Btn&amp;apos; is clicked on</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:47</date>
+  <millis>1589409887892</millis>
+  <sequence>168</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Canine_Cases_Btn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:47</date>
+  <millis>1589409887892</millis>
+  <sequence>169</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/BREED_Ddn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">52</property>
+  <property name="stepIndex">6</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:52</date>
+  <millis>1589409892563</millis>
+  <sequence>180</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Canine/Filter/Breed/BREED_Ddn&amp;apos; is clicked on</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:52</date>
+  <millis>1589409892564</millis>
+  <sequence>181</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/BREED_Ddn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:52</date>
+  <millis>1589409892564</millis>
+  <sequence>182</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/Beagle_Chkbx\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">54</property>
+  <property name="stepIndex">7</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:56</date>
+  <millis>1589409896154</millis>
+  <sequence>191</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Canine/Filter/Breed/Beagle_Chkbx&amp;apos; is clicked on</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:56</date>
+  <millis>1589409896155</millis>
+  <sequence>192</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/Beagle_Chkbx\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:56</date>
+  <millis>1589409896156</millis>
+  <sequence>193</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(\&amp;quot;Object Repository/Canine/Canine_CasesTable\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_TableHeader\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_NextBtn\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">56</property>
+  <property name="stepIndex">8</property>
+</record>
+<record>
+  <date>2020-05-13T18:44:57</date>
+  <millis>1589409897769</millis>
+  <sequence>249</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:57</date>
+  <millis>1589409897770</millis>
+  <sequence>250</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(\&amp;quot;Object Repository/Canine/Canine_CasesTable\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_TableHeader\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_NextBtn\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:44:57</date>
+  <millis>1589409897770</millis>
+  <sequence>251</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.ReadExcel.Neo4j()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">59</property>
+  <property name="stepIndex">9</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:00</date>
+  <millis>1589409900603</millis>
+  <sequence>255</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.ReadExcel.Neo4j is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:00</date>
+  <millis>1589409900604</millis>
+  <sequence>256</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.ReadExcel.Neo4j()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:00</date>
+  <millis>1589409900604</millis>
+  <sequence>257</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.compareLists()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">61</property>
+  <property name="stepIndex">10</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:00</date>
+  <millis>1589409900645</millis>
+  <sequence>258</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:00</date>
+  <millis>1589409900645</millis>
+  <sequence>259</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.compareLists()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:00</date>
+  <millis>1589409900645</millis>
+  <sequence>260</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:00</date>
+  <millis>1589409900645</millis>
+  <sequence>261</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:00</date>
+  <millis>1589409900646</millis>
+  <sequence>262</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>=================== Smart XPath Report =======================</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:00</date>
+  <millis>1589409900647</millis>
+  <sequence>263</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Refer to the link below to preview and approve auto healing on broken test objects.</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:00</date>
+  <millis>1589409900647</millis>
+  <sequence>264</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:00</date>
+  <millis>1589409900647</millis>
+  <sequence>265</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>===============================================================</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:00</date>
+  <millis>1589409900649</millis>
+  <sequence>266</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier</property>
+  <property name="source">C:\\Small_SetDebug\\DataCommons_Automation\\Test Cases\\Canine_TestCases\\Breed\\TC10_Canine_Filter_Breed-Bouvier.tc</property>
+  <property name="tag">Filter</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:01</date>
+  <millis>1589409901028</millis>
+  <sequence>268</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.driveropen()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">42</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:01</date>
+  <millis>1589409901033</millis>
+  <sequence>269</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message> Browser was open so quitting</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:02</date>
+  <millis>1589409902341</millis>
+  <sequence>270</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:02</date>
+  <millis>1589409902342</millis>
+  <sequence>271</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.driveropen()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:02</date>
+  <millis>1589409902342</millis>
+  <sequence>272</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : openBrowser(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">44</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:02</date>
+  <millis>1589409902355</millis>
+  <sequence>274</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Firefox (headless)&amp;apos; driver</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:02</date>
+  <millis>1589409902365</millis>
+  <sequence>276</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Action delay is set to 3,000 milliseconds</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:05</date>
+  <millis>1589409905731</millis>
+  <sequence>278</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = db568cba-7900-4896-ae59-1857474d7edc</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="sessionId">db568cba-7900-4896-ae59-1857474d7edc</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:05</date>
+  <millis>1589409905740</millis>
+  <sequence>279</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Firefox 68.0</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="browser">Firefox 68.0</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:05</date>
+  <millis>1589409905740</millis>
+  <sequence>280</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:05</date>
+  <millis>1589409905740</millis>
+  <sequence>281</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:05</date>
+  <millis>1589409905741</millis>
+  <sequence>282</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:05</date>
+  <millis>1589409905750</millis>
+  <sequence>283</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:05</date>
+  <millis>1589409905750</millis>
+  <sequence>284</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : openBrowser(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:05</date>
+  <millis>1589409905750</millis>
+  <sequence>285</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.browserDriver(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">46</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:05</date>
+  <millis>1589409905751</millis>
+  <sequence>286</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:05</date>
+  <millis>1589409905751</millis>
+  <sequence>287</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.browserDriver(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:05</date>
+  <millis>1589409905751</millis>
+  <sequence>288</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.RunKatalon(\&amp;quot;TC10_Canine_Filter_Breed-Bouvier.xlsx\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">48</property>
+  <property name="stepIndex">4</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:05</date>
+  <millis>1589409905751</millis>
+  <sequence>289</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test case file loaded This is the full filepath after converting to string :C:\\Small_SetDebug\\DataCommons_Automation\\InputFiles\\TC10_Canine_Filter_Breed-Bouvier.xlsx</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:05</date>
+  <millis>1589409905752</millis>
+  <sequence>290</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Global variable set for password file is :  C:\\Small_SetDebug\\DataCommons_Automation\\InputFiles\\TC10_Canine_Filter_Breed-Bouvier.xlsx</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:05</date>
+  <millis>1589409905767</millis>
+  <sequence>291</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Data loaded from input file for the test case. </message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:10</date>
+  <millis>1589409910703</millis>
+  <sequence>292</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.RunKatalon(\&amp;quot;TC10_Canine_Filter_Breed-Bouvier.xlsx\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:10</date>
+  <millis>1589409910703</millis>
+  <sequence>293</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Canine_Cases_Btn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">51</property>
+  <property name="stepIndex">5</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:13</date>
+  <millis>1589409913839</millis>
+  <sequence>302</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Canine/Canine_Cases_Btn&amp;apos; is clicked on</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:13</date>
+  <millis>1589409913840</millis>
+  <sequence>303</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Canine_Cases_Btn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:13</date>
+  <millis>1589409913840</millis>
+  <sequence>304</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/BREED_Ddn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">54</property>
+  <property name="stepIndex">6</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:18</date>
+  <millis>1589409918636</millis>
+  <sequence>315</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Canine/Filter/Breed/BREED_Ddn&amp;apos; is clicked on</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:18</date>
+  <millis>1589409918636</millis>
+  <sequence>316</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/BREED_Ddn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:18</date>
+  <millis>1589409918637</millis>
+  <sequence>317</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/Bouvier_Chkbx\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">56</property>
+  <property name="stepIndex">7</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:50</date>
+  <millis>1589409950404</millis>
+  <sequence>383</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Unable to find the element located by &amp;apos;By.xpath: //span[contains(text(),&amp;apos;Bouvier des Flandres&amp;apos;)]//parent::div//parent::divadded12345&amp;apos;. Please recheck the objects properties to make sure the desired element is located. </message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:50</date>
+  <millis>1589409950539</millis>
+  <sequence>387</sequence>
+  <level>FAILED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Unable to click on object &amp;apos;Object Repository/Canine/Filter/Breed/Bouvier_Chkbx&amp;apos; (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object &amp;apos;Object Repository/Canine/Filter/Breed/Bouvier_Chkbx&amp;apos;\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)\r\n\tat TC10_Canine_Filter_Breed-Bouvier.run(TC10_Canine_Filter_Breed-Bouvier:56)\r\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\r\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\r\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\r\n\tat TempTestSuite1589409843917.run(TempTestSuite1589409843917.groovy:36)\r\nCaused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: &amp;apos;Object Repository/Canine/Filter/Breed/Bouvier_Chkbx&amp;apos; located by &amp;apos;By.xpath: //span[contains(text(),&amp;apos;Bouvier des Flandres&amp;apos;)]//parent::div//parent::divadded12345&amp;apos; not found\r\n\tat com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1154)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)\r\n\tat Script1589136608130.run(Script1589136608130.groovy:56)\r\n\t... 13 more\r\n)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="failed.exception.class">com.kms.katalon.core.webui.exception.WebElementNotFoundException</property>
+  <property name="attachment">1589409950411.png</property>
+  <property name="failed.exception.stacktrace">com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: &apos;Object Repository/Canine/Filter/Breed/Bouvier_Chkbx&apos; located by &apos;By.xpath: //span[contains(text(),&apos;Bouvier des Flandres&apos;)]//parent::div//parent::divadded12345&apos; not found\r\n\tat com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1154)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)\r\n\tat TC10_Canine_Filter_Breed-Bouvier.run(TC10_Canine_Filter_Breed-Bouvier:56)\r\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\r\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\r\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\r\n\tat TempTestSuite1589409843917.run(TempTestSuite1589409843917.groovy:36)\r\n</property>
+  <property name="failed.exception.message">Web element with id: &apos;Object Repository/Canine/Filter/Breed/Bouvier_Chkbx&apos; located by &apos;By.xpath: //span[contains(text(),&apos;Bouvier des Flandres&apos;)]//parent::div//parent::divadded12345&apos; not found</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:50</date>
+  <millis>1589409950540</millis>
+  <sequence>388</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/Bouvier_Chkbx\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:50</date>
+  <millis>1589409950540</millis>
+  <sequence>391</sequence>
+  <level>FAILED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier FAILED.\nReason:\ncom.kms.katalon.core.exception.StepFailedException: Unable to click on object &amp;apos;Object Repository/Canine/Filter/Breed/Bouvier_Chkbx&amp;apos;\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)\r\n\tat TC10_Canine_Filter_Breed-Bouvier.run(TC10_Canine_Filter_Breed-Bouvier:56)\r\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\r\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\r\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\r\n\tat TempTestSuite1589409843917.run(TempTestSuite1589409843917.groovy:36)\r\nCaused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: &amp;apos;Object Repository/Canine/Filter/Breed/Bouvier_Chkbx&amp;apos; located by &amp;apos;By.xpath: //span[contains(text(),&amp;apos;Bouvier des Flandres&amp;apos;)]//parent::div//parent::divadded12345&amp;apos; not found\r\n\tat com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1154)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\r\n\t... 19 more\r\n</message>
+  <exception>
+    <message>com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Canine/Filter/Breed/Bouvier_Chkbx'</message>
+    <frame>
+      <class>com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain</class>
+      <method>stepFailed</method>
+      <line>64</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain</class>
+      <method>runKeyword</method>
+      <line>26</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.webui.keyword.builtin.ClickKeyword</class>
+      <method>click</method>
+      <line>76</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.webui.keyword.builtin.ClickKeyword</class>
+      <method>execute</method>
+      <line>43</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.keyword.internal.KeywordExecutor</class>
+      <method>executeKeywordForPlatform</method>
+      <line>72</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords</class>
+      <method>click</method>
+      <line>616</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0</class>
+      <method>call</method>
+    </frame>
+    <frame>
+      <class>TC10_Canine_Filter_Breed-Bouvier</class>
+      <method>run</method>
+      <line>56</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.ScriptEngine</class>
+      <method>run</method>
+      <line>194</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.ScriptEngine</class>
+      <method>runScriptAsRawText</method>
+      <line>119</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>runScript</method>
+      <line>337</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>doExecute</method>
+      <line>328</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>processExecutionPhase</method>
+      <line>307</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>accessMainPhase</method>
+      <line>299</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>execute</method>
+      <line>233</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestSuiteExecutor</class>
+      <method>accessTestCaseMainPhase</method>
+      <line>169</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestSuiteExecutor</class>
+      <method>accessTestSuiteMainPhase</method>
+      <line>142</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestSuiteExecutor</class>
+      <method>execute</method>
+      <line>91</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseMain</class>
+      <method>startTestSuite</method>
+      <line>157</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseMain$startTestSuite$0</class>
+      <method>call</method>
+    </frame>
+    <frame>
+      <class>TempTestSuite1589409843917</class>
+      <method>run</method>
+      <line>36</line>
+    </frame>
+  </exception>
+  <nestedLevel>0</nestedLevel>
+  <property name="failed.exception.stacktrace">com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: &apos;Object Repository/Canine/Filter/Breed/Bouvier_Chkbx&apos; located by &apos;By.xpath: //span[contains(text(),&apos;Bouvier des Flandres&apos;)]//parent::div//parent::divadded12345&apos; not found\r\n\tat com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1154)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)\r\n\tat TC10_Canine_Filter_Breed-Bouvier.run(TC10_Canine_Filter_Breed-Bouvier:56)\r\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\r\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\r\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\r\n\tat TempTestSuite1589409843917.run(TempTestSuite1589409843917.groovy:36)\r\n</property>
+  <property name="failed.exception.class">com.kms.katalon.core.webui.exception.WebElementNotFoundException</property>
+  <property name="failed.exception.message">Web element with id: &apos;Object Repository/Canine/Filter/Breed/Bouvier_Chkbx&apos; located by &apos;By.xpath: //span[contains(text(),&apos;Bouvier des Flandres&apos;)]//parent::div//parent::divadded12345&apos; not found</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:50</date>
+  <millis>1589409950542</millis>
+  <sequence>393</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:50</date>
+  <millis>1589409950543</millis>
+  <sequence>394</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>=================== Smart XPath Report =======================</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:50</date>
+  <millis>1589409950544</millis>
+  <sequence>395</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Refer to the link below to preview and approve auto healing on broken test objects.</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:50</date>
+  <millis>1589409950544</millis>
+  <sequence>396</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:50</date>
+  <millis>1589409950544</millis>
+  <sequence>397</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>===============================================================</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:50</date>
+  <millis>1589409950548</millis>
+  <sequence>398</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Canine_TestCases/Breed/TC11_Canine_Filter_Breed-Boxer</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Canine_TestCases/Breed/TC11_Canine_Filter_Breed-Boxer</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Canine_TestCases/Breed/TC11_Canine_Filter_Breed-Boxer</property>
+  <property name="source">C:\\Small_SetDebug\\DataCommons_Automation\\Test Cases\\Canine_TestCases\\Breed\\TC11_Canine_Filter_Breed-Boxer.tc</property>
+  <property name="tag">Filter</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:50</date>
+  <millis>1589409950921</millis>
+  <sequence>400</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.driveropen()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">42</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:50</date>
+  <millis>1589409950926</millis>
+  <sequence>401</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message> Browser was open so quitting</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:51</date>
+  <millis>1589409951726</millis>
+  <sequence>402</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:51</date>
+  <millis>1589409951726</millis>
+  <sequence>403</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.driveropen()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:51</date>
+  <millis>1589409951726</millis>
+  <sequence>404</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : openBrowser(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">44</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:51</date>
+  <millis>1589409951730</millis>
+  <sequence>406</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Firefox (headless)&amp;apos; driver</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:51</date>
+  <millis>1589409951737</millis>
+  <sequence>408</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Action delay is set to 3,000 milliseconds</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:54</date>
+  <millis>1589409954496</millis>
+  <sequence>410</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = 3ed8d0a4-4756-40d3-86f9-9098710f5e46</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="sessionId">3ed8d0a4-4756-40d3-86f9-9098710f5e46</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:54</date>
+  <millis>1589409954506</millis>
+  <sequence>411</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Firefox 68.0</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="browser">Firefox 68.0</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:54</date>
+  <millis>1589409954506</millis>
+  <sequence>412</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:54</date>
+  <millis>1589409954506</millis>
+  <sequence>413</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:54</date>
+  <millis>1589409954507</millis>
+  <sequence>414</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:54</date>
+  <millis>1589409954515</millis>
+  <sequence>415</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:54</date>
+  <millis>1589409954516</millis>
+  <sequence>416</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : openBrowser(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:54</date>
+  <millis>1589409954516</millis>
+  <sequence>417</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.browserDriver(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">46</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:54</date>
+  <millis>1589409954516</millis>
+  <sequence>418</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:54</date>
+  <millis>1589409954516</millis>
+  <sequence>419</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.browserDriver(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:54</date>
+  <millis>1589409954516</millis>
+  <sequence>420</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.RunKatalon(\&amp;quot;TC11_Canine_Filter_Breed-Boxer.xlsx\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">48</property>
+  <property name="stepIndex">4</property>
+</record>
+<record>
+  <date>2020-05-13T18:45:54</date>
+  <millis>1589409954517</millis>
+  <sequence>421</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test case file loaded This is the full filepath after converting to string :C:\\Small_SetDebug\\DataCommons_Automation\\InputFiles\\TC11_Canine_Filter_Breed-Boxer.xlsx</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:54</date>
+  <millis>1589409954517</millis>
+  <sequence>422</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Global variable set for password file is :  C:\\Small_SetDebug\\DataCommons_Automation\\InputFiles\\TC11_Canine_Filter_Breed-Boxer.xlsx</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:54</date>
+  <millis>1589409954536</millis>
+  <sequence>423</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Data loaded from input file for the test case. </message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:59</date>
+  <millis>1589409959104</millis>
+  <sequence>424</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.RunKatalon(\&amp;quot;TC11_Canine_Filter_Breed-Boxer.xlsx\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:45:59</date>
+  <millis>1589409959104</millis>
+  <sequence>425</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Canine_Cases_Btn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">50</property>
+  <property name="stepIndex">5</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:02</date>
+  <millis>1589409962243</millis>
+  <sequence>434</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Canine/Canine_Cases_Btn&amp;apos; is clicked on</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:02</date>
+  <millis>1589409962243</millis>
+  <sequence>435</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Canine_Cases_Btn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:02</date>
+  <millis>1589409962244</millis>
+  <sequence>436</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/BREED_Ddn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">52</property>
+  <property name="stepIndex">6</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:07</date>
+  <millis>1589409967238</millis>
+  <sequence>447</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Canine/Filter/Breed/BREED_Ddn&amp;apos; is clicked on</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:07</date>
+  <millis>1589409967238</millis>
+  <sequence>448</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/BREED_Ddn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:07</date>
+  <millis>1589409967238</millis>
+  <sequence>449</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/Boxer_Chkbx\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">54</property>
+  <property name="stepIndex">7</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:10</date>
+  <millis>1589409970683</millis>
+  <sequence>458</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Canine/Filter/Breed/Boxer_Chkbx&amp;apos; is clicked on</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:10</date>
+  <millis>1589409970683</millis>
+  <sequence>459</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/Boxer_Chkbx\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:10</date>
+  <millis>1589409970683</millis>
+  <sequence>460</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(\&amp;quot;Object Repository/Canine/Canine_CasesTable\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_TableHeader\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_NextBtn\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">56</property>
+  <property name="stepIndex">8</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:12</date>
+  <millis>1589409972931</millis>
+  <sequence>552</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:12</date>
+  <millis>1589409972931</millis>
+  <sequence>553</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(\&amp;quot;Object Repository/Canine/Canine_CasesTable\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_TableHeader\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_NextBtn\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:12</date>
+  <millis>1589409972931</millis>
+  <sequence>554</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.ReadExcel.Neo4j()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">59</property>
+  <property name="stepIndex">9</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:15</date>
+  <millis>1589409975836</millis>
+  <sequence>558</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.ReadExcel.Neo4j is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:15</date>
+  <millis>1589409975836</millis>
+  <sequence>559</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.ReadExcel.Neo4j()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:15</date>
+  <millis>1589409975837</millis>
+  <sequence>560</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.compareLists()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">61</property>
+  <property name="stepIndex">10</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:15</date>
+  <millis>1589409975894</millis>
+  <sequence>561</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:15</date>
+  <millis>1589409975895</millis>
+  <sequence>562</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.compareLists()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:15</date>
+  <millis>1589409975895</millis>
+  <sequence>563</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Canine_TestCases/Breed/TC11_Canine_Filter_Breed-Boxer</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:15</date>
+  <millis>1589409975896</millis>
+  <sequence>564</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Canine_TestCases/Breed/TC11_Canine_Filter_Breed-Boxer</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:15</date>
+  <millis>1589409975896</millis>
+  <sequence>565</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>=================== Smart XPath Report =======================</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:15</date>
+  <millis>1589409975897</millis>
+  <sequence>566</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Refer to the link below to preview and approve auto healing on broken test objects.</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:15</date>
+  <millis>1589409975897</millis>
+  <sequence>567</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:15</date>
+  <millis>1589409975897</millis>
+  <sequence>568</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>===============================================================</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:15</date>
+  <millis>1589409975901</millis>
+  <sequence>569</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Canine_TestCases/Breed/TC12_Canine_Filter_Breed-BullMastif</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Canine_TestCases/Breed/TC12_Canine_Filter_Breed-BullMastif</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Canine_TestCases/Breed/TC12_Canine_Filter_Breed-BullMastif</property>
+  <property name="source">C:\\Small_SetDebug\\DataCommons_Automation\\Test Cases\\Canine_TestCases\\Breed\\TC12_Canine_Filter_Breed-BullMastif.tc</property>
+  <property name="tag">Filter</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:16</date>
+  <millis>1589409976249</millis>
+  <sequence>571</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.driveropen()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">42</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:16</date>
+  <millis>1589409976253</millis>
+  <sequence>572</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message> Browser was open so quitting</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:17</date>
+  <millis>1589409977381</millis>
+  <sequence>573</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.driveropen is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:17</date>
+  <millis>1589409977381</millis>
+  <sequence>574</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.driveropen()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:17</date>
+  <millis>1589409977381</millis>
+  <sequence>575</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : openBrowser(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">44</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:17</date>
+  <millis>1589409977393</millis>
+  <sequence>577</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Firefox (headless)&amp;apos; driver</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:17</date>
+  <millis>1589409977406</millis>
+  <sequence>579</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Action delay is set to 3,000 milliseconds</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:20</date>
+  <millis>1589409980796</millis>
+  <sequence>581</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = c343ca94-c0cd-4245-9a54-d71ffc82a353</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="sessionId">c343ca94-c0cd-4245-9a54-d71ffc82a353</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:20</date>
+  <millis>1589409980807</millis>
+  <sequence>582</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Firefox 68.0</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="browser">Firefox 68.0</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:20</date>
+  <millis>1589409980807</millis>
+  <sequence>583</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:20</date>
+  <millis>1589409980807</millis>
+  <sequence>584</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:20</date>
+  <millis>1589409980807</millis>
+  <sequence>585</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:20</date>
+  <millis>1589409980815</millis>
+  <sequence>586</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:20</date>
+  <millis>1589409980816</millis>
+  <sequence>587</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : openBrowser(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:20</date>
+  <millis>1589409980816</millis>
+  <sequence>588</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.browserDriver(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">46</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:20</date>
+  <millis>1589409980816</millis>
+  <sequence>589</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:20</date>
+  <millis>1589409980817</millis>
+  <sequence>590</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.browserDriver(\&amp;quot;\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:20</date>
+  <millis>1589409980817</millis>
+  <sequence>591</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.RunKatalon(\&amp;quot;TC12_Canine_Filter_Breed-BullMastif.xlsx\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">48</property>
+  <property name="stepIndex">4</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:20</date>
+  <millis>1589409980817</millis>
+  <sequence>592</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test case file loaded This is the full filepath after converting to string :C:\\Small_SetDebug\\DataCommons_Automation\\InputFiles\\TC12_Canine_Filter_Breed-BullMastif.xlsx</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:20</date>
+  <millis>1589409980818</millis>
+  <sequence>593</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Global variable set for password file is :  C:\\Small_SetDebug\\DataCommons_Automation\\InputFiles\\TC12_Canine_Filter_Breed-BullMastif.xlsx</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:20</date>
+  <millis>1589409980839</millis>
+  <sequence>594</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Data loaded from input file for the test case. </message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:25</date>
+  <millis>1589409985244</millis>
+  <sequence>595</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.RunKatalon(\&amp;quot;TC12_Canine_Filter_Breed-BullMastif.xlsx\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:25</date>
+  <millis>1589409985244</millis>
+  <sequence>596</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Canine_Cases_Btn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">50</property>
+  <property name="stepIndex">5</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:28</date>
+  <millis>1589409988416</millis>
+  <sequence>605</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Canine/Canine_Cases_Btn&amp;apos; is clicked on</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:28</date>
+  <millis>1589409988417</millis>
+  <sequence>606</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Canine_Cases_Btn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:28</date>
+  <millis>1589409988417</millis>
+  <sequence>607</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/BREED_Ddn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">52</property>
+  <property name="stepIndex">6</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:33</date>
+  <millis>1589409993153</millis>
+  <sequence>618</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Canine/Filter/Breed/BREED_Ddn&amp;apos; is clicked on</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:33</date>
+  <millis>1589409993154</millis>
+  <sequence>619</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/BREED_Ddn\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:33</date>
+  <millis>1589409993154</millis>
+  <sequence>620</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/Bullmastif_Chkbx\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">54</property>
+  <property name="stepIndex">7</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:36</date>
+  <millis>1589409996721</millis>
+  <sequence>629</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Canine/Filter/Breed/Bullmastif_Chkbx&amp;apos; is clicked on</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:36</date>
+  <millis>1589409996722</millis>
+  <sequence>630</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Object Repository/Canine/Filter/Breed/Bullmastif_Chkbx\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:36</date>
+  <millis>1589409996722</millis>
+  <sequence>631</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(\&amp;quot;Object Repository/Canine/Canine_CasesTable\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_TableHeader\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_NextBtn\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">56</property>
+  <property name="stepIndex">8</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:37</date>
+  <millis>1589409997805</millis>
+  <sequence>669</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:37</date>
+  <millis>1589409997806</millis>
+  <sequence>670</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(\&amp;quot;Object Repository/Canine/Canine_CasesTable\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_TableHeader\&amp;quot;, \&amp;quot;Object Repository/Canine/Canine_NextBtn\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:37</date>
+  <millis>1589409997806</millis>
+  <sequence>671</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.ReadExcel.Neo4j()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">59</property>
+  <property name="stepIndex">9</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:40</date>
+  <millis>1589410000472</millis>
+  <sequence>675</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.ReadExcel.Neo4j is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:40</date>
+  <millis>1589410000472</millis>
+  <sequence>676</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.ReadExcel.Neo4j()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:40</date>
+  <millis>1589410000472</millis>
+  <sequence>677</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : ctdc.utilities.runtestcaseforKatalon.compareLists()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">61</property>
+  <property name="stepIndex">10</property>
+</record>
+<record>
+  <date>2020-05-13T18:46:40</date>
+  <millis>1589410000501</millis>
+  <sequence>678</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:40</date>
+  <millis>1589410000502</millis>
+  <sequence>679</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : ctdc.utilities.runtestcaseforKatalon.compareLists()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:40</date>
+  <millis>1589410000502</millis>
+  <sequence>680</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Canine_TestCases/Breed/TC12_Canine_Filter_Breed-BullMastif</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:40</date>
+  <millis>1589410000502</millis>
+  <sequence>681</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Canine_TestCases/Breed/TC12_Canine_Filter_Breed-BullMastif</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:40</date>
+  <millis>1589410000503</millis>
+  <sequence>682</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>=================== Smart XPath Report =======================</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:40</date>
+  <millis>1589410000503</millis>
+  <sequence>683</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Refer to the link below to preview and approve auto healing on broken test objects.</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:40</date>
+  <millis>1589410000503</millis>
+  <sequence>684</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:40</date>
+  <millis>1589410000503</millis>
+  <sequence>685</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>===============================================================</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-05-13T18:46:41</date>
+  <millis>1589410001711</millis>
+  <sequence>686</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endSuite</method>
+  <thread>1</thread>
+  <message>End Test Suite : Test Suites/Canine_TestSuite</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+</log>

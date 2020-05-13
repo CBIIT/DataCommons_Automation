@@ -16,9 +16,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.c
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.windows.keyword.contribution.WindowsDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\lollal\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\TC01_END_TO_END_SelectAllCases\\20200513_104945\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\lollal\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Breed\\TC10_Canine_Filter_Breed-Bouvier\\20200513_182410\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/TC01_END_TO_END_SelectAllCases', new TestCaseBinding('Test Cases/Canine_TestCases/TC01_END_TO_END_SelectAllCases',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier', new TestCaseBinding('Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

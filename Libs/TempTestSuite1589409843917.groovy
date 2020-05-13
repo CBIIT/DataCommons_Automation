@@ -29,8 +29,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Small_SetDebug\\DataCommons_Automation\\Reports\\20200513_101027\\Canine_TestSuite\\20200513_101027\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Small_SetDebug\\DataCommons_Automation\\Reports\\20200513_184403\\Canine_TestSuite\\20200513_184403\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/Canine_TestSuite', suiteProperties, new File("C:\\Small_SetDebug\\DataCommons_Automation\\Reports\\20200513_101027\\Canine_TestSuite\\20200513_101027\\testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/Canine_TestSuite', suiteProperties, new File("C:\\Small_SetDebug\\DataCommons_Automation\\Reports\\20200513_184403\\Canine_TestSuite\\20200513_184403\\testCaseBinding"))

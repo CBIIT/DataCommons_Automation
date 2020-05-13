@@ -345,5 +345,23 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		}
 	}
 
+	@Keyword
+	public  static driveropen(){
+
+		try{
+			DriverFactory.getCurrentWindowIndex()
+			//driver.getTitle();
+			KeywordUtil.logInfo(" Browser was open so quitting")
+			driver.quit()
+			System.out.println(" Browser was open so quitting")
+			driver.quit()
+			// browser is open
+		} catch(NoSuchSessionError) {
+			// browser is closed
+		
+		KeywordUtil.logInfo("Browser is NOT Existing")
+			
+		}
+	}
 
 }  //class ends here
