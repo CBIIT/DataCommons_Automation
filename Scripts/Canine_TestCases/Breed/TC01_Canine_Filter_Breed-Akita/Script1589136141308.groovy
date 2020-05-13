@@ -45,7 +45,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_Filter_Breed-Akita.xlsx')
 
-WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
+WebUI.click(findTestObject('Canine/Canine_Cases_Btn'))
 
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'))
 

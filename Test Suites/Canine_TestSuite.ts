@@ -46,4 +46,28 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/TC02_END_TO_END_SelectSingleCaseID</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>f57aac39-508a-4d3f-bd28-a8f4385944e4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC01_Canine_Filter_Diagnosis-BoneSarcoma</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b459902d-6ce0-44ca-9429-9ad4386fb1a7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b9df7ff0-3c14-4c1a-82fa-232c0347f8a2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC03_Canine_Filter_Diagnosis-LipMandible</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1851d99a-533e-49f0-9164-98b9d8928ea8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC02_Canine_Filter_Diagnosis-LipLingual</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

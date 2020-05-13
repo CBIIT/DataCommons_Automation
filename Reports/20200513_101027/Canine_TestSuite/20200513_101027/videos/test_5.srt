@@ -1,0 +1,48 @@
+1
+00:00:00,342 --> 00:00:00,343
+1. openBrowser("")
+
+2
+00:00:07,331 --> 00:00:07,331
+5. ctdc.utilities.runtestcaseforKatalon.browserDriver("")
+
+3
+00:00:07,334 --> 00:00:07,334
+9. ctdc.utilities.runtestcaseforKatalon.RunKatalon("Password_canine.xlsx")
+
+4
+00:00:14,212 --> 00:00:14,214
+13. click(findTestObject("Object Repository/Canine/Canine_Cases_Btn"))
+
+5
+00:00:19,475 --> 00:00:19,475
+17. waitForElementPresent(findTestObject("Object Repository/Canine/Canine_CasesTable"), 5)
+
+6
+00:00:21,290 --> 00:00:21,291
+21. click(findTestObject("Canine/Canine_SelectAll"))
+
+7
+00:00:26,795 --> 00:00:26,796
+25. click(findTestObject("Canine/Canine_SaveToMycases"))
+
+8
+00:00:32,130 --> 00:00:32,130
+29. click(findTestObject("Canine/Canine_MyCases"))
+
+9
+00:00:37,231 --> 00:00:37,231
+33. waitForElementPresent(findTestObject("Object Repository/Canine/Canine_GoToFiles"), 5)
+
+10
+00:00:37,626 --> 00:00:37,627
+37. click(findTestObject("Object Repository/Canine/Canine_GoToFiles"))
+
+11
+00:00:42,747 --> 00:00:42,748
+41. click(findTestObject("Canine/Canine_SelectAll"))
+
+12
+00:00:48,234 --> 00:00:48,234
+45. click(findTestObject("Canine/Canine_DownloadManifest"))
+
