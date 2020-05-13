@@ -11,10 +11,10 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>7f6c435b-0c65-4cb0-aab0-d79ed5e4ec76</testSuiteGuid>
    <testCaseLink>
-      <guid>158157ce-137d-4360-a869-c53ea20367e8</guid>
+      <guid>6b25de33-18bd-4b39-9441-d8c16fae2978</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b2df3490-2a74-49cc-b3fb-959023ae313e</guid>
@@ -47,15 +47,27 @@
       <testCaseId>Test Cases/Canine_TestCases/Gender/TC04_Canine_Filter_Gender-Male</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d809ce4a-3fee-407b-904a-21094fd61fe8</guid>
+      <guid>b6e6fc14-b3ec-4988-969b-c5d9ecf1b74a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC03_Canine_Filter_Diagnosis-LipMandible</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>aab0c31f-2aee-4361-8b0c-2badaf06b5c8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC04_Canine_Filter_Diagnosis-LipMaxilla</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d809ce4a-3fee-407b-904a-21094fd61fe8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC03_Canine_Filter_Diagnosis-LipMandible</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>158157ce-137d-4360-a869-c53ea20367e8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
