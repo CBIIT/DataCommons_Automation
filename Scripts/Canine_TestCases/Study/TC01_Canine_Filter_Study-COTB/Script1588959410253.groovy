@@ -27,6 +27,8 @@ import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 
+WebUI.closeBrowser()
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.driveropen'()
 
 'Opens the browser of choice: Chrome, Firefox or Edge'
@@ -56,4 +58,6 @@ CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
 'Reads Neo4j excel and Webdata excel as lists and compares the data.'
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()
+
+WebUI.closeBrowser()
 
