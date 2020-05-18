@@ -40,9 +40,7 @@ import java.nio.file.Paths as Paths
   - Reads Neo4j DB using the query from Input file and saves the data in the excel mentioned in Input file
   - Reads Neo4j excel and Webdata excel as lists and compares the data.
   */
-
 WebUI.closeBrowser()
-
 
 WebUI.openBrowser('')
 
@@ -51,9 +49,11 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_Filter_Breed-Akita.xlsx')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
+
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'), 5)
+
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'))
 
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/Akita_Chkbx'))
@@ -64,4 +64,6 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Obj
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()
+
+WebUI.closeBrowser()
 

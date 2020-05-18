@@ -64,3 +64,5 @@ CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()
 
+WebUI.closeBrowser()
+

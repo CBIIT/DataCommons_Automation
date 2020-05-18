@@ -26,6 +26,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
+
 /*This test script:
  - Opens the browser of choice: Chrome, Firefox or Edge
  - Driver opened by Katalon is used in Selenium.
@@ -48,9 +49,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC36_Canine_Fi
 
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
-WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn') )
+WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'))
 
-WebUI.click( findTestObject('Object Repository/Canine/Filter/Breed/StaffdshrBull_Chkbx') )
+WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/StaffdshrBull_Chkbx'))
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
     'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_NextBtn')
@@ -58,4 +59,6 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Obj
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()
+
+WebUI.closeBrowser()
 

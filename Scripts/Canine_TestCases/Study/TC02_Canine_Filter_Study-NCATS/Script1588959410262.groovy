@@ -40,10 +40,12 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Canine_Fi
 
 'Clicks on the Cases button in the Navbar of ICDC\'s homepage.\r\n'
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
+
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
 'Clicks on the Filter \'Study\' from left pane'
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study'), 5)
+
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study'))
 
 'Selects the specific check box from \'Study\' filter.'
@@ -58,4 +60,6 @@ CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
 'Reads Neo4j excel and Webdata excel as lists and compares the data.\r\n'
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()
+
+WebUI.closeBrowser()
 
