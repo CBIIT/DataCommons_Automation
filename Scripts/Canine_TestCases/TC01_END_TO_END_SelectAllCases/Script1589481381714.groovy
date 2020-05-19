@@ -41,7 +41,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_GoTo
 
 WebUI.click(findTestObject('Object Repository/Canine/Canine_GoToFiles'))
 
-WebUI.click(findTestObject('Canine/Canine_SelectAll'))
+WebUI.click(findTestObject('Canine/Canine_SelectAll_debug'))
 
 WebUI.click(findTestObject('Canine/Canine_DownloadManifest'))
 

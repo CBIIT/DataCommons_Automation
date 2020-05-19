@@ -65,6 +65,12 @@
       <testCaseId>Test Cases/Canine_TestCases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>7ef14e83-af54-4700-9cef-0ea96d53f0ee</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/TC01_END_TO_END_SelectAllCases</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>b89dd487-7b60-47a6-9aa6-5954461cf866</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
