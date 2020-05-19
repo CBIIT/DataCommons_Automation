@@ -43,7 +43,5 @@ WebUI.click(findTestObject('Object Repository/Canine/Canine_MyCases'))
 
 WebUI.click(findTestObject('Object Repository/Canine/Canine_GoToFiles'))
 
-WebUI.click(findTestObject('Object Repository/Canine/Canine_SelectAll'))
-
 WebUI.closeBrowser()
 
